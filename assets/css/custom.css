@@ -4,7 +4,7 @@ Just customize your theme here.
 ================================================== */
 @font-face {
   font-family: "Noto Sans";
-  src: url(https://itssl.org/assets/noto.ttf);
+  src: url(https://{{ site.baseurl }}/assets/noto.ttf);
 }
 
 .noto {
