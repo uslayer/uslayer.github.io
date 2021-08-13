@@ -57,8 +57,8 @@
       <h5>Section</h5>
       <ul class="nav flex-column">
         {% for item in site.data.menus.footermenu %}
-          <li>
-            <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
+          <li class="nav-item mb-2">
+            <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-0 text-muted" alt="{{item.title}}">{{item.title}}</a>
           </li>
         {% endfor %}
       </ul>
