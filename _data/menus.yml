@@ -1,0 +1,38 @@
+# Top Menu
+topmenu:
+
+- title: Home
+  url: ""
+
+- title: Blog
+  url: "blog/"
+
+- title: About
+  url: "about/"
+
+- title: Contact
+  url: "contact/"
+
+# - title: Get this theme
+#   url: https://itssl.org/download
+#   class: "ml-2 btn btn-dark text-white px-3"
+#   external: true
+
+# Footer Menu
+footermenu:
+
+- title: Home
+  url: ""
+
+- title: Press Releases
+  url: "press/"
+
+- title: Privacy Policy
+  url: "privacy-policy/"
+
+- title: Contact
+  url: "contact/"
+
+- title: Download
+  url: #
+  external: true
