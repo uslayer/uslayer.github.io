@@ -4,7 +4,7 @@ formspree: mjvj--------
 timezone: UTC
 baseurl: ""
 permalink: "/:title/"
-logo: 'assets/images/logo.jpg'
+logo: 'assets/images/uslayer-logo.svg'
 favicon: 'assets/images/favicon.ico'
 author: Admin
 paginate: 30
