@@ -2,7 +2,7 @@ title: "US LAYER"
 email: contact@uslayer.com
 formspree: mjvj--------
 timezone: UTC
-baseurl: "/web"
+baseurl: "/uslayer.github.io"
 permalink: "/:title/"
 logo: 'assets/images/logo.jpg'
 favicon: 'assets/images/favicon.ico'
