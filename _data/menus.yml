@@ -13,10 +13,7 @@ topmenu:
 - title: Contact
   url: "contact/"
 
-# - title: Get this theme
-#   url: https://itssl.org/download
-#   class: "ml-2 btn btn-dark text-white px-3"
-#   external: true
+
 
 # Footer Menu
 footermenu:
