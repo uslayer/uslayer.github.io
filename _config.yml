@@ -2,7 +2,7 @@ title: "US LAYER"
 email: contact@uslayer.com
 formspree: mjvj--------
 timezone: UTC
-baseurl: "/"
+baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/uslayer-logo.svg'
 favicon: 'assets/images/favicon.ico'
