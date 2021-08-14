@@ -7,7 +7,11 @@ Just customize your theme here.
   src: url(https://uslayer.github.io/assets/noto.ttf);
 }
 
+@import url("/btrap.css");
 
+.hero-notice {
+    background-color: #d2f4ea;
+}
 
 .noto {
   font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", "Noto Sinhala";
