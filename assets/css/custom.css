@@ -15,8 +15,12 @@ Just customize your theme here.
 .bd-navbar .navbar-nav .nav-link {
     padding-right: .25rem;
     padding-left: .25rem;
-    color: #000;
+    color: #495057;
     font-weight: 500;
+}
+
+.bd-navbar a:hover, .bd-navbar a:focus {
+    color: #0d6efd;
 }
 
 
