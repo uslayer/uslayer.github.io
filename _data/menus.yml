@@ -4,9 +4,6 @@ topmenu:
 - title: Home
   url: ""
 
-- title: Blog
-  url: "blog/"
-
 - title: About
   url: "about/"
 
@@ -20,9 +17,6 @@ footermenu:
 
 - title: Home
   url: ""
-
-- title: Press Releases
-  url: "press/"
 
 - title: Privacy Policy
   url: "privacy-policy/"
