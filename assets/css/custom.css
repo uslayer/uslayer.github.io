@@ -7,6 +7,11 @@ Just customize your theme here.
   src: url(https://uslayer.github.io/assets/noto.ttf);
 }
 
+.bd-footer a {
+    color: #495057;
+    text-decoration: none;
+}
+
 .noto {
   font-family: "PT Sans",sans-serif, "Noto Sans";
 }
