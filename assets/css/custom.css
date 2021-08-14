@@ -7,6 +7,11 @@ Just customize your theme here.
   src: url(https://uslayer.github.io/assets/noto.ttf);
 }
 
+.bd-navbar .navbar-toggler {
+    padding: 0;
+    border: 0;
+}
+
 .bd-navbar .navbar-nav .nav-link {
     padding-right: .25rem;
     padding-left: .25rem;
