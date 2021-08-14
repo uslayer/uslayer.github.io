@@ -7,8 +7,6 @@ Just customize your theme here.
   src: url(https://uslayer.github.io/assets/noto.ttf);
 }
 
-@import url("/btrap.css");
-
 .hero-notice {
     background-color: #d2f4ea;
 }
