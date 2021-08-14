@@ -2,7 +2,7 @@
 topmenu:
 
 - title: Home
-  url: ""
+  url: "{{site.baseurl}}"
 
 - title: Blog
   url: "blog/"
