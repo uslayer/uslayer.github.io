@@ -7,6 +7,10 @@ Just customize your theme here.
   src: url(https://uslayer.github.io/assets/noto.ttf);
 }
 
+.my-5 {
+    margin-bottom: -3rem!important;
+}
+
 .hero-notice {
     background-color: #d2f4ea;
 }
