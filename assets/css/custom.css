@@ -7,32 +7,7 @@ Just customize your theme here.
   src: url(https://uslayer.github.io/assets/noto.ttf);
 }
 
-.bd-navbar .navbar-toggler {
-    padding: 0;
-    border: 0;
-}
 
-.bd-navbar .navbar-nav .nav-link {
-    padding-right: .25rem;
-    padding-left: .25rem;
-    color: #495057;
-    font-weight: 500;
-}
-
-.bd-navbar a:hover, .bd-navbar a:focus {
-    color: #0d6efd;
-}
-
-
-.bd-footer a {
-    color: #495057;
-    text-decoration: none;
-}
-
-.bd-footer a:hover, .bd-footer a:focus {
-    color: #0d6efd;
-    text-decoration: underline;
-}
 
 .noto {
   font-family: "PT Sans",sans-serif, "Noto Sans";
