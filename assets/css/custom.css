@@ -9,10 +9,11 @@ Just customize your theme here.
 
 .review_btn{
       text-align: left;
+      margin-bottom: 20px;
 }
 
 .review_btn div{
-      margin-left: 10px;
+      margin-left: 20px;
 }
 
 .my-5b {
