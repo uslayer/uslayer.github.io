@@ -27,14 +27,16 @@ gtag('js', new Date());
 gtag('config', '{{site.ganalytics}}');
 </script>
 {% endif %}
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
 </head>
 
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
 <body class="{{ layout }}">
-
-  <script>
-  $("[data-toggle=popover]").popover();
-  </script>
 
 <!-- Menu Navigation
 ================================================== -->
