@@ -7,6 +7,10 @@ Just customize your theme here.
   src: url(https://uslayer.github.io/assets/noto.ttf);
 }
 
+.review_btn{
+      text-align: left;
+}
+
 .my-5b {
     margin-bottom: -3rem!important;
 }
