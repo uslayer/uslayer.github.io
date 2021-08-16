@@ -12,8 +12,9 @@ Just customize your theme here.
       margin-bottom: 20px;
 }
 
-.review_btn div{
+.review_btn i{
       margin-left: 20px;
+      margin-right: 10px;
 }
 
 .my-5b {
