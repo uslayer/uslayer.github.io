@@ -15,6 +15,11 @@ Just customize your theme here.
 .review_btn i{
       margin-left: 20px;
       margin-right: 10px;
+      font-size: 2rem;
+}
+
+.review_btn bt-txt{
+    margin-bottom: 10px;
 }
 
 .my-5b {
