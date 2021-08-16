@@ -2,7 +2,6 @@
 Don't want to use sass and simply modify the stylesheet in the old css fashion?
 Just customize your theme here.
 ================================================== */
-@import "bootstrap.min.css";
 @font-face {
   font-family: "Noto Sinhala";
   src: url(https://uslayer.github.io/assets/noto.ttf);
