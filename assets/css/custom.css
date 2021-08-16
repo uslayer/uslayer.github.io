@@ -11,6 +11,10 @@ Just customize your theme here.
       text-align: left;
 }
 
+.review_btn div{
+      margin-left: 10px;
+}
+
 .my-5b {
     margin-bottom: -3rem!important;
 }
