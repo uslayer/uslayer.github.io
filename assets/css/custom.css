@@ -17,7 +17,7 @@ Just customize your theme here.
       font-size: 2rem;
 }
 
-.review_btn small{
+.review_btn div{
   font-size: 1.5rem;
   margin-left: 10px;
 }
