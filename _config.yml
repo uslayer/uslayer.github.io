@@ -2,7 +2,7 @@ title: "US LAYER"
 email: contact@uslayer.com
 formspree: xqknzwyk
 timezone: UTC
-baseurl: ""
+baseurl: "/"
 domain: "uslayer.com"
 permalink: "/:title/"
 logo: 'assets/images/uslayer-logo.svg'
