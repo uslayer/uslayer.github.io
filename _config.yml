@@ -3,6 +3,7 @@ email: contact@uslayer.com
 formspree: xqknzwyk
 timezone: UTC
 baseurl: "/"
+domain: "uslayer.com"
 permalink: "/:title/"
 logo: 'assets/images/uslayer-logo.svg'
 favicon: 'assets/images/favicon.ico'
