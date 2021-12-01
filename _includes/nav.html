@@ -1,15 +1,9 @@
 <header class="navbar navbar-expand-md bd-navbar">
   <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
 
-    {% if page.url != "{{site.domain}}" %}
     <a class="navbar-brand p-0 me-2" href="{{site.domain}}" aria-label="US LAYER">
       <img class="mr-2" src="{{site.baseurl}}/{{site.logo}}" alt="us layer logo" style="width:150px">
     </a>
-    {% else %}
-    <a class="navbar-brand p-0 me-2" href="/" aria-label="US LAYER">
-      <img class="mr-2" src="{{site.baseurl}}/{{site.logo}}" alt="us layer logo" style="width:150px">
-    </a>
-    {% endif %}
 
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
