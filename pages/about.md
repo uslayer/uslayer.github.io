@@ -21,8 +21,8 @@ permalink: "/about/"
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>...</h2>
-          <p>...</p>
+          <h2></h2>
+          <p></p>
         </div>
       </div>
     </div>
