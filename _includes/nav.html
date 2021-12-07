@@ -16,11 +16,11 @@
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
 
 
-        {% for node in site.data.menus.topmenu %}
-            {% if page.url == node.url %}
-              <li class="nav-item col-6 col-md-auto"><a href="{{node.url}}" class="nav-link p2 active">{{node.title}}</a></li>
+        {% for item in site.data.menus.topmenu %}
+            {% if page.url == item.url %}
+              <li class="nav-item col-6 col-md-auto"><a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p2 active">{{node.title}}</a></li>
             {% else %}
-              <li><a href="{{node.url}}">{{node.title}}</a></li>
+              <li><a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}">{{item.title}}</a></li>
             {% endif %}
           {% endfor %}
 
