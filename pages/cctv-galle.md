@@ -1,6 +1,11 @@
 ---
 layout: page
-title: CCTV in Galle
+title: CCTV in Galle | Home Security
 permalink: /cctv-galle/
 comments: false
 ---
+
+You can get our reliable service in Hapugala, Wakwella, Baddegama, Poddala, Dodanduwa, Hikkaduwa, Bataduwa, Ahangama, Koggala, Habaraduwa, Wanduramba, Labuduwa, Karapitiya, Kalegana, Beligaha and many other areas in Galle district.
+
+### Why do you need CCTV?
+Video surveillance systems(CCTV) protect private property, offices, shops, etc. from various encroachments, burglaries, thefts and other offenses. Even non-functioning cameras have a deterrent effect on offenders, thereby ensuring the safety of objects of observation.
