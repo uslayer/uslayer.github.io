@@ -18,7 +18,11 @@
 
         {% for item in site.data.menus.topmenu %}
           <li class="nav-item col-6 col-md-auto">
-            <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-2" alt="{{item.title}}">{{item.title}}</a>
+            {% if page.url == "/{% endunless %}{{item.url}}" %}
+              <b><a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-2" alt="{{item.title}}">{{item.title}}</a></b>
+            {% else %}
+              <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-2" alt="{{item.title}}">{{item.title}}</a>
+            {% endif %}            
           </li>
         {% endfor %}
 
