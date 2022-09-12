@@ -18,7 +18,7 @@
 
         {% for item in site.data.menus.topmenu %}
           <li class="nav-item col-6 col-md-auto">
-            {% if "{{ page.url }}" == "/{{ item.url }}" %}
+            {% if page.url == "/{{ item.url }}" %}
               <b><a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-2" alt="{{item.title}}">{{item.title}}</a></b>
             {% else %}
               <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-2" alt="{{item.title}}">{{item.title}}</a>
