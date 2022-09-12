@@ -19,7 +19,7 @@ layout: default
         <h1 class="display-5 fw-bold">{{ page.title }}</h1>
 
         {% for item in site.data.menus.topmenu %}
-          {{ page.url }} == {{ item.url }}<br>
+          {{ page.url }} == /{{ item.url }}<br>
         {% endfor %}
 
         {{content}}
