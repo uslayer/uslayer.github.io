@@ -12,14 +12,14 @@
 
     </button>
 
-    <div class="navbar-collapse collapse" id="bdNavbar">
+    <div class="navbar-collapse collapse px-4" id="bdNavbar">
       <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
        
 
         {% for item in site.data.menus.topmenu %}
           <li class="nav-item col-6 col-md-auto">
             <a href="{{item.url | relative_url}}" 
-            class="nav-link p-2 {% if page.url == item.url %}active{% endif %}" alt="{{item.title}}">{{item.title}}</a>                        
+            class="nav-link p-2 {% if page.url == item.url %}active border-bottom border-4{% endif %}" alt="{{item.title}}">{{item.title}}</a>                        
           </li>
         {% endfor %}
 
