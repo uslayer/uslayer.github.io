@@ -9,6 +9,9 @@ comments: false
 
 <!-- Wrapper container -->
 <p class="mb-4">Thank you for your interest in getting in touch with us. Please send your message here. We will reply as soon as possible!</p>
+
+{page.url == /{item.url}}
+
   <!-- Bootstrap 5 starter form -->
   <form id="contactForm" action="https://formspree.io/{{site.formspree}}" method="POST">
 
