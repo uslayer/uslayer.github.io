@@ -17,8 +17,8 @@
        
 
         {% for item in site.data.menus.topmenu %}
-          <li class="nav-item col-6 col-md-auto {% if item.url == page.url %}active{% endif %}">
-            <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-2" alt="{{item.title}}">{{item.title}}</a>                       
+          <li class="nav-item col-6 col-md-auto">
+            <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" class="nav-link p-2 {% if item.url == page.url %}active{% endif %}" alt="{{item.title}}">{{item.title}}</a>                       
           </li>
         {% endfor %}
 
