@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CCTV in Galle | Home Security
+title: CCTV in Galle - Home Security
 permalink: /cctv-galle/
 comments: false
 ---
