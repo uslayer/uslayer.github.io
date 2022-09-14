@@ -3,6 +3,7 @@ layout: page
 title: Hik-Connect download - Hikvision
 permalink: /hik-connect/
 comments: false
+image: assets/images/hik-connect-logo.jpg
 ---
 
 Hear you can download Hik-Connect APK for your android device.
