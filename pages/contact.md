@@ -10,7 +10,7 @@ comments: false
 <!-- Wrapper container -->
 <p class="mb-4">Thank you for your interest in getting in touch with us. Please send your message here. We will reply as soon as possible!</p>
 {% for item in site.data.menus.topmenu %}
-{page.url == /{item.url}}
+{{page.url} =1 /{item.url}}
 {% endfor %}
 
   <!-- Bootstrap 5 starter form -->
