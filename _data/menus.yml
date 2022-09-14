@@ -5,10 +5,10 @@ topmenu:
   url: ""
 
 - title: About
-  url: "about/"
+  url: "/about/"
 
 - title: Contact
-  url: "contact/"
+  url: "/contact/"
 
 
 
@@ -19,10 +19,10 @@ footermenu:
   url: ""
 
 - title: Privacy Policy
-  url: "privacy-policy/"
+  url: "/privacy-policy/"
 
 - title: Contact
-  url: "contact/"
+  url: "/contact/"
 
 - title: Download
   url: #
