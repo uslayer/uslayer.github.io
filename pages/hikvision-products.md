@@ -25,7 +25,7 @@ comments: false
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <i class="bi bi-cpu-fill"></i>
         </div>
-        <h3 class="fs-2">Hikvision eSSD DVR</h3>
+        <h3 class="fw-light fs-2">Hikvision eSSD DVR</h3>
         <p></p>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
@@ -36,7 +36,7 @@ comments: false
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <i class="bi bi-cpu-fill"></i>
         </div>
-        <h3 class="fs-2">Hikvision Turbo HD DVR</h3>
+        <h3 class="fw-light fs-2">Hikvision Turbo HD DVR</h3>
         <p></p>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
@@ -47,7 +47,7 @@ comments: false
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <i class="bi bi-camera-video"></i>
         </div>
-        <h3 class="fs-2">Hikvision ColorVu Camera</h3>
+        <h3 class="fw-light fs-2">Hikvision ColorVu Camera</h3>
         <p></p>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
@@ -58,7 +58,7 @@ comments: false
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <i class="bi bi-webcam-fill"></i>
         </div>
-        <h3 class="fs-2">Hikvision Web Camera</h3>
+        <h3 class="fw-light fs-2">Hikvision Web Camera</h3>
         <p></p>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
