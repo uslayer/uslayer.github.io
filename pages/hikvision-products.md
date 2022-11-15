@@ -6,7 +6,7 @@ comments: false
 ---
 
 <section class="py-5 text-center container">
-  <img class="rounded-lg-3" src="/assets/images/hikvision-logo.png" alt="Hikvision logo">
+  <img class="rounded-lg-3" src="/assets/images/hikvision-logo.png" alt="Hikvision logo" width="40%">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">If you want to get prices of hikvision CCTV camera or hikvision web camera or any other hikvision products please contact,</h1>
