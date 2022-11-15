@@ -17,3 +17,9 @@ comments: false
       </div>
     </div>
 </section>
+
+
+
+
+
+<p class="lead text-muted">Hikivisin logo is the registered trademark of Hangzhou Hikvision Digital Technology Co., Ltd</p>
