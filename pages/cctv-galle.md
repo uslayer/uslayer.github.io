@@ -17,7 +17,7 @@ Call now: <a href="tel:=+94769026918">+94 76 902 6918</a>
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Are you looking for CCTV shop in Galle?</h1>
-        <p class="lead text-muted">You should contact us for hikvisin products</p>
+        <p class="lead text-muted">You should contact us for hikvision products</p>
         <p>
           <a href="tel:=+94769026918" class="btn btn-primary my-2">+94 76 902 6918</a>
         </p>
