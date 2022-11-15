@@ -65,6 +65,50 @@ comments: false
           <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
         </a>
       </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <i class="bi bi-webcam-fill"></i>
+        </div>
+        <h3 class="fw-light fs-2">Hikvision  AcuSense DVR</h3>
+        <p></p>
+        <a href="#" class="icon-link d-inline-flex align-items-center">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <i class="bi bi-person-bounding-box"></i>
+        </div>
+        <h3 class="fw-light fs-2">Hikvision AcuSense DVR</h3>
+        <p></p>
+        <a href="#" class="icon-link d-inline-flex align-items-center">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <i class="bi bi-webcam-fill"></i>
+        </div>
+        <h3 class="fw-light fs-2">Hikvision Turbo HD Camera</h3>
+        <p></p>
+        <a href="#" class="icon-link d-inline-flex align-items-center">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+          <i class="bi bi-bell-fill"></i>
+        </div>
+        <h3 class="fw-light fs-2">Hikvision Alarm</h3>
+        <p></p>
+        <a href="#" class="icon-link d-inline-flex align-items-center">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
     </div>
 </div>
 
