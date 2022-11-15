@@ -25,13 +25,8 @@ comments: false
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
         </div>
-        <h3 class="fs-2">Hikvision DS-E04HGHI-B 4-ch 1080p Lite 1U H.265 eSSD DVR</h3>
-        <p>Powered by eSSD technology.
-          Low power consumption.
-Scene-adaptive bitrate control video compression.
-Deep learning based human and vehicle targets classification of Motion Detection 2.0.
-HDTVI/AHD/CVI/CVBS/IP video inputs.
-Up to 1080p Lite@30 fps encoding capability.</p>
+        <h3 class="fs-2">Hikvision eSSD DVR</h3>
+        <p></p>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
@@ -42,7 +37,7 @@ Up to 1080p Lite@30 fps encoding capability.</p>
           <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
         </div>
         <h3 class="fs-2">Featured title</h3>
-        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <p></p>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
@@ -52,8 +47,8 @@ Up to 1080p Lite@30 fps encoding capability.</p>
         <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
           <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
         </div>
-        <h3 class="fs-2">Hikvision DS-UL4 2K Live Web Camera</h3>
-        <p>High quality imaging with 2560 × 1440 resolution. Built-in supplement light for bright imaging. Low distortion lens for reducing image distortion. Built-in microphone with clear sound. Type-C interface, supporting USB 2.0 protocols. Plug-and-play, no need to install driver software. Support auto focus</p>
+        <h3 class="fs-2">Hikvision Web Camera</h3>
+        <p></p>
         <a href="#" class="icon-link d-inline-flex align-items-center">
           Call to action
           <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
