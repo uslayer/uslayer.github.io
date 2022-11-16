@@ -21,16 +21,19 @@ footermenu:
 - title: Home
   alt: Home
   url: "/"
+  external: true
 
 - title: Privacy Policy
   alt: Privacy Policy
   url: "/privacy-policy/"
+  external: true
 
 - title: Contact
   alt: Contact us layer
   url: "/contact/"
+  external: true
 
 - title: Download Hik-Connect
   alt: Hikconnect download
   url: "/hik-connect/"
-external: true
+  external: true
