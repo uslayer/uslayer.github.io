@@ -2,15 +2,19 @@
 topmenu:
 
 - title: Home
+  alt:
   url: "/"
 
 - title: Hikvision
+  alt:
   url: "/hikvision-products/"
 
 - title: About
+  alt:
   url: "/about/"
 
 - title: Contact
+  alt:
   url: "/contact/"
 
 
@@ -19,14 +23,18 @@ topmenu:
 footermenu:
 
 - title: Home
+  alt: Home
   url: ""
 
 - title: Privacy Policy
+  alt: Privacy Policy
   url: "/privacy-policy/"
 
 - title: Contact
+  alt: Contact us layer
   url: "/contact/"
 
 - title: Download Hik-Connect
+  alt: Hikconnect download
   url: "/hik-connect/"
   external: true

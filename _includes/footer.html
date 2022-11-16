@@ -50,7 +50,7 @@
         <ul class="list-unstyled">
           {% for item in site.data.menus.footermenu %}
             <li class="mb-2">
-              <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.title}}">{{item.title}}</a>
+              <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.alt}}">{{item.title}}</a>
             </li>
           {% endfor %}
         </ul>
