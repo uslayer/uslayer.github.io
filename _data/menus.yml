@@ -2,19 +2,15 @@
 topmenu:
 
 - title: Home
-  alt:
   url: "/"
 
 - title: Hikvision
-  alt:
   url: "/hikvision-products/"
 
 - title: About
-  alt:
   url: "/about/"
 
 - title: Contact
-  alt:
   url: "/contact/"
 
 
