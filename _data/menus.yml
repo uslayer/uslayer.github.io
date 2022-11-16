@@ -27,6 +27,6 @@ footermenu:
 - title: Contact
   url: "/contact/"
 
-- title: Download
-  url: #
+- title: Download Hik-Connect
+  url: "/hik-connect/"
   external: true
