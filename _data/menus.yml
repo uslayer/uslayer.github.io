@@ -33,4 +33,4 @@ footermenu:
 - title: Download Hik-Connect
   alt: Hikconnect download
   url: "/hik-connect/"
-  #external: true
+external: true
