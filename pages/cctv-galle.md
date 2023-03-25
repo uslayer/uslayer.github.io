@@ -5,7 +5,7 @@ permalink: /cctv-galle/
 comments: false
 ---
 
-<img width="50" src="../assets/images/galle-hikvision-cctv-banner.jpg" alt="Hikvision CCTV Galle, CCTV Galle, Best CCTV">
+<img src="../assets/images/galle-hikvision-cctv-banner.jpg" alt="Hikvision CCTV Galle, CCTV Galle, Best CCTV">
 
 You can get our reliable service in Hapugala, Wakwella, Baddegama, Poddala, Dodanduwa, Hikkaduwa, Bataduwa, Ahangama, Koggala, Habaraduwa, Wanduramba, Labuduwa, Karapitiya, Kalegana, Beligaha and many other areas in Galle district.
 
