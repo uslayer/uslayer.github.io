@@ -8,7 +8,9 @@ comments: false
 
 
 <!-- Wrapper container -->
-<p class="mb-4">Thank you for your interest in getting in touch with us. Please send your message here. We will reply as soon as possible!</p>
+<p class="mb-4">
+Thank you for considering our services! Our team specializes in a variety of technology solutions, including web development, custom software development, and mobile app development. Additionally, we offer expertise in CCTV and alarm security system installation, wifi network installation, and computer networking. We pride ourselves on delivering high-quality results and exceptional customer service. Contact us today to learn more about how we can help with your technology needs!
+</p>
 <!-- Bootstrap 5 starter form -->
   <form id="contactForm" action="https://formspree.io/{{site.formspree}}" method="POST">
 
