@@ -26,3 +26,5 @@ Call now: <a href="tel:=+94769026918">+94 76 902 6918</a>
       </div>
     </div>
 </section>
+
+<img class="img-fluid" src="../assets/images/uslayer_cctv_ad.jpg" alt="Galle CCTV, Best CCTV, CCTV Ad, Advertistment">
