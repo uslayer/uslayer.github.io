@@ -5,6 +5,8 @@ permalink: "/about/"
 #image: assets/images/screenshot.png
 ---
 
+<h1 class="display-5 fw-bold">{{ page.title }}</h1>
+
 U.S. LAYER is a blossoming company, founded by two ambitious brothers in Sri Lanka back in 2016. Ever since our inception, we have taken great pride in providing exemplary services to businesses, resolving their complex and cost-intensive problems with elegant solutions that boost flexibility, enhance performance, and elevate competitiveness. Our unwavering commitment to delivering outstanding customer service has enabled us to fulfill our promise of producing affirmative outcomes for our esteemed clients.
 
 ## Our Vision
