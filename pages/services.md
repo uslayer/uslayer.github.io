@@ -7,8 +7,8 @@ permalink: "/services/"
 
 <div class="text-center p-5">
     <h1 class="display-5 fw-bold">Our Services</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="fs-5 mb-4 text-secondary">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="mx-auto">
+            <p class="fs-5 mb-4 text-secondary">We offer a comprehensive range of services to meet the diverse needs of our clients. With expertise in web hosting and development, we ensure your website remains accessible and optimized for peak performance. Our skilled software developers specialize in creating innovative solutions, including mobile apps, to enhance productivity and user experience. For seamless connectivity and security, our network engineers provide expert computer networking services. We also prioritize the safety of your home and business through advanced security solutions, such as burglar alarms and CCTV systems. At our company, we are dedicated to delivering top-notch IT services tailored to your specific requirements, helping you thrive in the digital world.</p>
         </div>
 </div>
 
