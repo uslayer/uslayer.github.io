@@ -14,7 +14,7 @@ permalink: "/services/"
 
 ## Web Hosting and Development
 
-In today's digital age, having a strong online presence is crucial for any business. Our company provides reliable web hosting services that keep your website up and running smoothly around the clock. We also offer custom web development services tailored to your unique business needs. Whether you need a simple landing page or a complex e-commerce platform, our experienced developers will work with you to create a stunning website that effectively communicates your brand and message.
+In today's digital age, having a strong online presence is crucial for any business. Our company provides reliable <a href="https://hosting.uslayer.com/" target="_blank">web hosting</a> services that keep your website up and running smoothly around the clock. We also offer custom web development services tailored to your unique business needs. Whether you need a simple landing page or a complex e-commerce platform, our experienced developers will work with you to create a stunning website that effectively communicates your brand and message.
 
 ## Software Development
 
