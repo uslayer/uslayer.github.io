@@ -1,5 +1,5 @@
 ---
-layout: categories
+layout: product
 title: Products
 permalink: "/products/"
 ---
