@@ -1,5 +1,5 @@
 ---
 layout: page
-title: CCTV in Galle - Home Security
+title: WiFi Burglar Alarm System
 permalink: "/products/burglar-alarm-system"
 ---
