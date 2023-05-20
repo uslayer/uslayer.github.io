@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: product
+comments: false
 title:  "We all wait for summer"
 categories: [ Jekyll, tutorial ]
 image: assets/images/1.jpg
