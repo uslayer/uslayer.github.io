@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: services_layout
 title: Services
 permalink: "/services/"
 #image: assets/images/screenshot.png
