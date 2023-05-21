@@ -7,7 +7,9 @@ permalink: "/services/"
 
 <div class="text-center">
     <h1 class="display-5 fw-bold">Our Services</h1>
-        <p class="col-md-8 fs-4">We offer a comprehensive range of services to meet the diverse needs of our clients. With expertise in web hosting and development, we ensure your website remains accessible and optimized for peak performance. Our skilled software developers specialize in creating innovative solutions, including mobile apps, to enhance productivity and user experience. For seamless connectivity and security, our network engineers provide expert computer networking services. We also prioritize the safety of your home and business through advanced security solutions, such as burglar alarms and CCTV systems. At our company, we are dedicated to delivering top-notch IT services tailored to your specific requirements, helping you thrive in the digital world.</p>
+        <div class="mx-auto">
+            <p class="fs-5 mb-4 text-secondary">We offer a comprehensive range of services to meet the diverse needs of our clients. With expertise in web hosting and development, we ensure your website remains accessible and optimized for peak performance. Our skilled software developers specialize in creating innovative solutions, including mobile apps, to enhance productivity and user experience. For seamless connectivity and security, our network engineers provide expert computer networking services. We also prioritize the safety of your home and business through advanced security solutions, such as burglar alarms and CCTV systems. At our company, we are dedicated to delivering top-notch IT services tailored to your specific requirements, helping you thrive in the digital world.</p>
+        </div>
 </div>
 
 ## Web Hosting and Development
