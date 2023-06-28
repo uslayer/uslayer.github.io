@@ -4,8 +4,8 @@ topmenu:
 - title: Home
   url: "/"
 
-- title: Hikvision
-  url: "/hikvision-products/"
+- title: Services
+  url: "/services/"
 
 - title: About
   url: "/about/"
@@ -36,4 +36,9 @@ footermenu:
 - title: Download Hik-Connect
   alt: Hikconnect download
   url: "/hik-connect/"
+  external: true
+
+- title: Hikvision Products
+  alt: Hikvision Products
+  url: "/hikvision-products/"
   external: true
