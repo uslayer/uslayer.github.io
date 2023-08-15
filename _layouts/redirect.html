@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google-site-verification" content="246QM4Xki0jvdh3ANoDKXe-UOPQ23He8W83KY4P5ttA" />
+<meta name="description" content="U.S LAYER specialize in developing POS Systems, CCTV Surveillance Systems, Payroll Systems, 
+Innovative Automation, Computer Networks & IT Services. Based on Galle Sri Lanka">
+
+<link rel="canonical" href="{{ page.redirect_to }}"/>
+<meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="{{ site.baseurl }}/assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="{{ site.baseurl }}/assets/images/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- <title>{{ page.title }} | {{site.title}}</title> -->
+
+{% seo %}
+<script src="{{ site.baseurl }}/assets/js/color-modes.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+
+<link href="{{ site.baseurl }}/assets/css/btrap.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+<!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
+<link href="{{ site.baseurl }}/assets/css/custom.css" rel="stylesheet">
+<!-- custom CSS end-->
+
+{% if jekyll.environment == "production" %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ganalytics}}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '{{site.ganalytics}}');
+</script>
+<!-- Clarity tracking code for https://uslayer.com/ --><script>    (function(c,l,a,r,i,t,y){        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);    })(window, document, "clarity", "script", "ejdzgl0xtg");</script>
+{% endif %}
+</head>
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }}">
+{% include them_selection_svg.html %}
+
+<!-- Menu Navigation
+================================================== -->
+{% include nav_new.html %}
+
+
+<!-- Container
+================================================== -->
+<main>
+      {% if page.url == "/" %}      
+            {% include master_head.html %}
+      {% endif %}
+      {{ content }}
+</main>
+
+<!-- Footer
+================================================== -->
+{% include footer.html %}
+
+</body>
+
+</html>
