@@ -640,7 +640,7 @@ i.bi { display:inline-flex;align-items:center;justify-content:center;vertical-al
       </a>
     </div>
     <div style="margin-top:1.75rem;color:rgba(255,255,255,0.45);font-size:.8rem;">
-      US Layer · Hapugala, Wakwella, Galle, Sri Lanka · <a href="mailto:info@uslayer.com" style="color:rgba(255,255,255,0.5);">info@uslayer.com</a>
+      US Layer · Hapugala, Wakwella, Galle, Sri Lanka · <a href="mailto:contact@uslayer.com" style="color:rgba(255,255,255,0.5);">contact@uslayer.com</a>
     </div>
   </div>
 </section>

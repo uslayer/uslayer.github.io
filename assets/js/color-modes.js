@@ -1,7 +1,6 @@
 /*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
+ * Color mode toggler for Bootstrap
+ * https://getbootstrap.com/
  */
 
 (() => {
@@ -15,44 +14,50 @@
       if (storedTheme) {
         return storedTheme
       }
-  
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
     }
   
     const setTheme = theme => {
-      if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.setAttribute('data-bs-theme', 'dark')
+      const resolved = (theme === 'auto' || theme === 'dark' || theme === 'light') ? theme : 'light'
+      if (resolved === 'auto') {
+        document.documentElement.setAttribute('data-bs-theme',
+          window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
       } else {
-        document.documentElement.setAttribute('data-bs-theme', theme)
+        document.documentElement.setAttribute('data-bs-theme', resolved)
       }
     }
   
     setTheme(getPreferredTheme())
   
     const showActiveTheme = (theme, focus = false) => {
-      const themeSwitcher = document.querySelector('#themeToggle')
+      try {
+        const themeSwitcher = document.querySelector('#themeToggle')
+        if (!themeSwitcher) return
   
-      if (!themeSwitcher) {
-        return
-      }
+        const activeThemeIcon = document.querySelector('.theme-icon-active use')
+        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+        if (!btnToActive) return
   
-      const activeThemeIcon = document.querySelector('.theme-icon-active use')
-      const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-      if (!btnToActive) return
-      const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+        const useEl = btnToActive.querySelector('svg use')
+        const svgOfActiveBtn = useEl ? useEl.getAttribute('href') : null
   
-      document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-        element.classList.remove('active')
-        element.setAttribute('aria-pressed', 'false')
-      })
+        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+          element.classList.remove('active')
+          element.setAttribute('aria-pressed', 'false')
+        })
   
-      btnToActive.classList.add('active')
-      btnToActive.setAttribute('aria-pressed', 'true')
-      if (activeThemeIcon) activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-      themeSwitcher.setAttribute('aria-label', `Theme: ${btnToActive.dataset.bsThemeValue}`)
+        btnToActive.classList.add('active')
+        btnToActive.setAttribute('aria-pressed', 'true')
+        if (activeThemeIcon && svgOfActiveBtn) {
+          activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+        }
+        themeSwitcher.setAttribute('aria-label', `Theme: ${theme}`)
   
-      if (focus) {
-        themeSwitcher.focus()
+        if (focus) {
+          themeSwitcher.focus()
+        }
+      } catch (e) {
+        // fail silently — theme switching must not break page functionality
       }
     }
   
