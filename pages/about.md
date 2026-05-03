@@ -97,7 +97,7 @@ description: "US Layer is a professional IT and security services company based 
   <div class="text-center">
     <h3 class="fw-semibold mb-3">Ready to work with us?</h3>
     <p class="text-secondary mb-4">Contact us for a free site survey and no-obligation quotation.</p>
-    <a href="https://wa.me/94769026918" class="btn btn-primary btn-lg px-4 me-2" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp me-2"></i>WhatsApp Us</a>
+    <a href="https://wa.me/94769026918" class="btn btn-lg px-4 me-2" style="background:#25d366;color:#fff;border:none;" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp me-2"></i>WhatsApp Us</a>
     <a href="/services/" class="btn btn-outline-secondary btn-lg px-4">Our Services</a>
   </div>
 

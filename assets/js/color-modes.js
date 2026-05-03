@@ -11,53 +11,42 @@
   
     const getPreferredTheme = () => {
       const storedTheme = getStoredTheme()
-      if (storedTheme) {
-        return storedTheme
-      }
+      if (storedTheme) return storedTheme
       return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
     }
   
     const setTheme = theme => {
-      const resolved = (theme === 'auto' || theme === 'dark' || theme === 'light') ? theme : 'light'
-      if (resolved === 'auto') {
+      if (theme === 'auto') {
         document.documentElement.setAttribute('data-bs-theme',
           window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
       } else {
-        document.documentElement.setAttribute('data-bs-theme', resolved)
+        document.documentElement.setAttribute('data-bs-theme', theme || 'light')
       }
     }
   
     setTheme(getPreferredTheme())
   
-    const showActiveTheme = (theme, focus = false) => {
+    const showActiveTheme = (theme) => {
       try {
-        const themeSwitcher = document.querySelector('#themeToggle')
-        if (!themeSwitcher) return
-  
-        const activeThemeIcon = document.querySelector('.theme-icon-active use')
-        const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-        if (!btnToActive) return
-  
-        const useEl = btnToActive.querySelector('svg use')
-        const svgOfActiveBtn = useEl ? useEl.getAttribute('href') : null
-  
-        document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-          element.classList.remove('active')
-          element.setAttribute('aria-pressed', 'false')
+        // Update desktop toggle icon
+        const activeIcon = document.querySelector('.theme-icon-active use')
+        const srcBtn = document.querySelector(`#themePanel [data-bs-theme-value="${theme}"]`)
+        if (activeIcon && srcBtn) {
+          const srcUse = srcBtn.querySelector('svg use')
+          if (srcUse) activeIcon.setAttribute('href', srcUse.getAttribute('href'))
+        }
+        // Mark active in desktop panel
+        document.querySelectorAll('.theme-panel-item').forEach(el => {
+          const isActive = el.getAttribute('data-bs-theme-value') === theme
+          el.classList.toggle('active', isActive)
+          el.setAttribute('aria-pressed', isActive ? 'true' : 'false')
         })
-  
-        btnToActive.classList.add('active')
-        btnToActive.setAttribute('aria-pressed', 'true')
-        if (activeThemeIcon && svgOfActiveBtn) {
-          activeThemeIcon.setAttribute('href', svgOfActiveBtn)
-        }
-        themeSwitcher.setAttribute('aria-label', `Theme: ${theme}`)
-  
-        if (focus) {
-          themeSwitcher.focus()
-        }
+        // Mark active in mobile buttons
+        document.querySelectorAll('.mobile-theme-btn').forEach(el => {
+          el.classList.toggle('active', el.getAttribute('data-bs-theme-value') === theme)
+        })
       } catch (e) {
-        // fail silently — theme switching must not break page functionality
+        // fail silently
       }
     }
   
@@ -71,14 +60,36 @@
     window.addEventListener('DOMContentLoaded', () => {
       showActiveTheme(getPreferredTheme())
   
-      document.querySelectorAll('[data-bs-theme-value]')
-        .forEach(toggle => {
-          toggle.addEventListener('click', () => {
-            const theme = toggle.getAttribute('data-bs-theme-value')
-            setStoredTheme(theme)
-            setTheme(theme)
-            showActiveTheme(theme, true)
-          })
+      // Desktop panel toggle (open/close)
+      const toggleBtn = document.getElementById('themeToggle')
+      const panel = document.getElementById('themePanel')
+      if (toggleBtn && panel) {
+        toggleBtn.addEventListener('click', (e) => {
+          e.stopPropagation()
+          const open = panel.classList.toggle('open')
+          toggleBtn.setAttribute('aria-expanded', open)
         })
+        // Close on outside click
+        document.addEventListener('click', () => {
+          panel.classList.remove('open')
+          toggleBtn.setAttribute('aria-expanded', 'false')
+        })
+        panel.addEventListener('click', e => e.stopPropagation())
+      }
+  
+      // All theme buttons (desktop panel + mobile)
+      document.querySelectorAll('[data-bs-theme-value]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const theme = btn.getAttribute('data-bs-theme-value')
+          setStoredTheme(theme)
+          setTheme(theme)
+          showActiveTheme(theme)
+          // Close desktop panel after pick
+          if (panel) {
+            panel.classList.remove('open')
+            if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false')
+          }
+        })
+      })
     })
   })()

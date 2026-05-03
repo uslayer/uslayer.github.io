@@ -1,22 +1,22 @@
 <header class="site-header" id="site-header">
   <div class="container">
-    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <!-- Mobile: hamburger (left, before logo) -->
+      <button class="navbar-toggler border-0 d-flex d-lg-none me-2" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+              aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
       <!-- Brand -->
       <a class="navbar-brand" href="/" aria-label="US LAYER home">
         <img src="/assets/images/uslayer_logo.svg" alt="US LAYER" height="32" loading="eager">
       </a>
 
-      <!-- Mobile toggler -->
-      <button class="navbar-toggler ms-auto" type="button"
-              data-bs-toggle="collapse" data-bs-target="#mainNav"
-              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Nav links -->
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 mb-2 mb-lg-0">
+      <!-- Desktop Nav (lg+) -->
+      <div class="d-none d-lg-flex align-items-center ms-auto gap-1">
+        <ul class="navbar-nav flex-row align-items-center gap-1 mb-0">
           {% for item in site.data.menus.topmenu %}
           <li class="nav-item">
             <a href="{{ item.url | relative_url }}"
@@ -26,12 +26,13 @@
           </li>
           {% endfor %}
 
-          <!-- Social icons (desktop) -->
-          <li class="nav-item d-none d-lg-flex align-items-center ms-1">
-            <div style="width:1px;height:20px;background:var(--c-border);margin:0 0.5rem;"></div>
+          <!-- Divider -->
+          <li class="nav-item d-flex align-items-center">
+            <div style="width:1px;height:20px;background:var(--c-border);margin:0 0.4rem;"></div>
           </li>
+
           {% if site.social.facebook %}
-          <li class="nav-item d-none d-lg-block">
+          <li class="nav-item">
             <a class="nav-link px-2" href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook">
               <i class="bi bi-facebook"></i>
             </a>
@@ -39,36 +40,28 @@
           {% endif %}
 
           <!-- Theme switcher -->
-          <li class="nav-item dropdown d-none d-lg-block">
-            <button class="nav-link dropdown-toggle px-2 border-0 bg-transparent"
+          <li class="nav-item theme-switcher-wrap">
+            <button class="nav-link px-2 border-0 bg-transparent theme-toggle-btn"
                     id="themeToggle" type="button"
-                    data-bs-toggle="dropdown" aria-expanded="false" aria-label="Toggle theme">
+                    aria-expanded="false" aria-label="Toggle theme">
               <svg class="bi theme-icon-active" style="width:1em;height:1em;"><use href="#moon-stars-fill"></use></svg>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end shadow-sm" style="min-width:9rem;font-size:.85rem;border-radius:var(--r-md);">
-              <li>
-                <button class="dropdown-item d-flex align-items-center gap-2" type="button" data-bs-theme-value="light" aria-pressed="false">
-                  <svg class="bi theme-icon opacity-60"><use href="#sun-fill"></use></svg> Light
-                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item d-flex align-items-center gap-2 active" type="button" data-bs-theme-value="dark" aria-pressed="true">
-                  <svg class="bi theme-icon opacity-60"><use href="#moon-stars-fill"></use></svg> Dark
-                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item d-flex align-items-center gap-2" type="button" data-bs-theme-value="auto" aria-pressed="false">
-                  <svg class="bi theme-icon opacity-60"><use href="#circle-half"></use></svg> Auto
-                  <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
-                </button>
-              </li>
-            </ul>
+            <div class="theme-panel" id="themePanel" role="menu">
+              <button class="theme-panel-item" type="button" data-bs-theme-value="light" aria-pressed="false" role="menuitem">
+                <svg class="bi" style="width:1em;height:1em;"><use href="#sun-fill"></use></svg> Light
+              </button>
+              <button class="theme-panel-item" type="button" data-bs-theme-value="dark" aria-pressed="false" role="menuitem">
+                <svg class="bi" style="width:1em;height:1em;"><use href="#moon-stars-fill"></use></svg> Dark
+              </button>
+              <button class="theme-panel-item" type="button" data-bs-theme-value="auto" aria-pressed="false" role="menuitem">
+                <svg class="bi" style="width:1em;height:1em;"><use href="#circle-half"></use></svg> Auto
+              </button>
+            </div>
+          </li>
           </li>
 
-          <!-- CTA button -->
-          <li class="nav-item ms-lg-2">
+          <!-- CTA -->
+          <li class="nav-item ms-1">
             <a href="https://wa.me/94769026918" class="nav-cta" target="_blank" rel="noopener noreferrer">
               <i class="bi bi-whatsapp me-1"></i>WhatsApp Us
             </a>
@@ -76,13 +69,78 @@
         </ul>
       </div>
 
+      <!-- Mobile: WhatsApp icon (right, < lg) -->
+      <div class="d-flex d-lg-none align-items-center ms-auto">
+        <a href="https://wa.me/94769026918" class="nav-cta-icon" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Us">
+          <i class="bi bi-whatsapp" style="font-size:1rem;"></i>
+        </a>
+      </div>
+
     </nav>
   </div>
 </header>
 
+<!-- ===== Mobile Off-canvas Nav (slides from left) ===== -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+  <div class="offcanvas-header">
+    <a href="/" class="navbar-brand" id="mobileNavLabel" aria-label="US LAYER home">
+      <img src="/assets/images/uslayer_logo.svg" alt="US LAYER" height="30" loading="eager">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+
+    <nav aria-label="Mobile navigation">
+      <ul class="mobile-nav-list">
+        {% for item in site.data.menus.topmenu %}
+        <li>
+          <a href="{{ item.url | relative_url }}"
+             class="mobile-nav-link {% if page.url == item.url %}active{% endif %}">
+            {{ item.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <div class="mt-auto mobile-nav-footer">
+      <a href="https://wa.me/94769026918"
+         class="btn w-100 d-flex align-items-center justify-content-center gap-2 mb-3" style="background:#25d366;color:#fff;border:none;"
+         target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-whatsapp"></i> WhatsApp Us
+      </a>
+      <div class="d-flex gap-2 justify-content-center">
+        <button class="mobile-theme-btn" type="button" data-bs-theme-value="light" aria-label="Light theme">
+          <svg class="bi" style="width:1em;height:1em;"><use href="#sun-fill"></use></svg>
+        </button>
+        <button class="mobile-theme-btn" type="button" data-bs-theme-value="dark" aria-label="Dark theme">
+          <svg class="bi" style="width:1em;height:1em;"><use href="#moon-stars-fill"></use></svg>
+        </button>
+        <button class="mobile-theme-btn" type="button" data-bs-theme-value="auto" aria-label="Auto theme">
+          <svg class="bi" style="width:1em;height:1em;"><use href="#circle-half"></use></svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <script>
   // Sticky shadow on scroll
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 10);
   }, { passive: true });
+
+  // Re-run stagger animation each time the drawer opens
+  var mobileNavEl = document.getElementById('mobileNav');
+  if (mobileNavEl) {
+    mobileNavEl.addEventListener('show.bs.offcanvas', function () {
+      var items = this.querySelectorAll('.mobile-nav-list li');
+      items.forEach(function (li) {
+        li.style.animation = 'none';
+        void li.offsetHeight; // force reflow
+        li.style.animation = '';
+      });
+    });
+  }
 </script>
