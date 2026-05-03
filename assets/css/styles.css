@@ -349,10 +349,7 @@ img { max-width:100%; height:auto; }
 
 /* Hero visual card */
 .hero-visual {
-  background: var(--c-white);
-  border: 1px solid var(--c-border);
   border-radius: var(--r-xl);
-  box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
 .hero-visual img { display: block; width: 100%; height: auto; }
@@ -868,7 +865,7 @@ img { max-width:100%; height:auto; }
 [data-bs-theme="dark"] .hero-desc { color: #94a3b8; }
 [data-bs-theme="dark"] .hero-eyebrow { color: #a5b4fc; border-color: rgba(165,180,252,0.25); background: rgba(99,102,241,0.1); }
 [data-bs-theme="dark"] .hero-stats { border-top-color: rgba(255,255,255,0.08); }
-[data-bs-theme="dark"] .hero-visual { background: #1e293b; border-color: #334155; }
+
 
 /* ── Sections & typography ── */
 [data-bs-theme="dark"] .section { background: #0f172a; }
