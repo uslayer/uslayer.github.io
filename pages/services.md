@@ -1,31 +1,121 @@
 ---
-layout: page
+layout: services_layout
 title: Services
 permalink: "/services/"
-#image: assets/images/screenshot.png
+description: "Professional IT and security services in Galle, Sri Lanka — IP CCTV installation, burglar alarms, WiFi networking, software and web development."
 ---
 
+<div class="container py-5">
 
+  <!-- Hero -->
+  <div class="row justify-content-center text-center mb-5">
+    <div class="col-lg-8">
+      <h1 class="display-5 fw-bold mb-3">Our Services</h1>
+      <p class="lead text-secondary">End-to-end technology and security services for homes, hotels and businesses across the Galle District, Sri Lanka.</p>
+    </div>
+  </div>
 
-<div class="text-center">
-    <h1 class="display-5 fw-bold">Our Services</h1>
-        <div class="mx-auto">
-            <p class="fs-5 mb-4 text-secondary">We offer a comprehensive range of services to meet the diverse needs of our clients. With expertise in web hosting and development, we ensure your website remains accessible and optimized for peak performance. Our skilled software developers specialize in creating innovative solutions, including mobile apps, to enhance productivity and user experience. For seamless connectivity and security, our network engineers provide expert computer networking services. We also prioritize the safety of your home and business through advanced security solutions, such as burglar alarms and CCTV systems. At our company, we are dedicated to delivering top-notch IT services tailored to your specific requirements, helping you thrive in the digital world.</p>
+  <!-- Service Cards -->
+  <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="service-icon flex-shrink-0"><i class="bi bi-camera-video"></i></div>
+            <div>
+              <h3 class="fs-5 fw-semibold mb-2">IP CCTV Installation</h3>
+              <p class="text-secondary mb-0">Professional PoE IP camera systems with network video recorders, remote mobile viewing and motion alerts. We design, supply and install complete systems for homes, hotels, guesthouses and commercial premises across the Galle District.</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="service-icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
+            <div>
+              <h3 class="fs-5 fw-semibold mb-2">Burglar Alarm Systems</h3>
+              <p class="text-secondary mb-0">Professionally designed intrusion detection systems including PIR motion sensors, door and window contacts, wireless keypads and GSM auto-diallers. Can be integrated with your CCTV system for complete site protection.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="service-icon flex-shrink-0"><i class="bi bi-wifi"></i></div>
+            <div>
+              <h3 class="fs-5 fw-semibold mb-2">WiFi & Networking</h3>
+              <p class="text-secondary mb-0">Managed WiFi networks, structured cabling and LAN design for hotels, guesthouses and commercial properties. Includes cloud-managed access points with remote monitoring and guest portal options for hospitality businesses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="service-icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+            <div>
+              <h3 class="fs-5 fw-semibold mb-2">Software Development</h3>
+              <p class="text-secondary mb-0">Custom web applications, business management systems and mobile apps built to your requirements. We handle design, development, deployment and ongoing support — from simple tools to complex platforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body p-4">
+          <div class="d-flex gap-3 align-items-start">
+            <div class="service-icon flex-shrink-0"><i class="bi bi-globe"></i></div>
+            <div>
+              <h3 class="fs-5 fw-semibold mb-2">Web Hosting & Development</h3>
+              <p class="text-secondary mb-0">Reliable <a href="https://hosting.uslayer.com/" target="_blank" rel="noopener">web hosting</a> with SSD storage and 99.9% uptime, paired with professional website design — from business landing pages to full e-commerce platforms tailored to your brand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Why US Layer -->
+  <div class="row g-4 py-4 border-top border-bottom mb-5">
+    <div class="col-12 text-center mb-2">
+      <h2 class="fw-bold">Why Choose US Layer?</h2>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="service-icon mx-auto mb-3"><i class="bi bi-receipt"></i></div>
+      <h5 class="fw-semibold mb-1">Transparent Pricing</h5>
+      <p class="text-secondary small mb-0">No hidden charges. We provide itemised, written quotations before any work begins.</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="service-icon mx-auto mb-3"><i class="bi bi-person-check"></i></div>
+      <h5 class="fw-semibold mb-1">In-house Engineers</h5>
+      <p class="text-secondary small mb-0">Every installation is carried out by our own trained technicians — no subcontractors.</p>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="service-icon mx-auto mb-3"><i class="bi bi-headset"></i></div>
+      <h5 class="fw-semibold mb-1">Ongoing Support</h5>
+      <p class="text-secondary small mb-0">Post-installation maintenance, remote help and on-site support included as standard.</p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center">
+    <p class="text-secondary mb-3">Not sure which service suits your needs? We are happy to advise — free of charge.</p>
+    <a href="/contact/" class="btn btn-primary btn-lg px-4">Get a Free Quote</a>
+  </div>
+
 </div>
-
-## Web Hosting and Development
-
-In today's digital age, having a strong online presence is crucial for any business. Our company provides reliable <a href="https://hosting.uslayer.com/" target="_blank">web hosting</a> services that keep your website up and running smoothly around the clock. We also offer custom web development services tailored to your unique business needs. Whether you need a simple landing page or a complex e-commerce platform, our experienced developers will work with you to create a stunning website that effectively communicates your brand and message.
-
-## Software Development
-
-Our software development services encompass everything from mobile apps to desktop applications. We work with businesses of all sizes to design, develop, and deploy software that streamlines operations, improves productivity, and enhances the user experience. Our team of experienced developers uses the latest tools and technologies to ensure that your software is reliable, scalable, and secure.
-
-## Computer Networking
-
-Our computer networking services help businesses of all sizes to optimize their network infrastructure for maximum performance and security. We offer a wide range of services, including network design, installation, and maintenance. Our team of network engineers is highly skilled in configuring and managing switches, routers, firewalls, and other network devices to ensure that your business stays connected and secure.
-
-## Home and Business Security
-
-Keeping your home or business secure is a top priority for us. We offer a range of security solutions, including burglar alarm systems, CCTV systems, and access control systems. Our team of security experts will work with you to design and implement a security system that meets your specific needs and budget. With our advanced security systems, you can rest assured that your property is protected around the clock.

@@ -1,21 +1,104 @@
 ---
-layout: page
+layout: services_layout
 title: About Us
 permalink: "/about/"
-#image: assets/images/screenshot.png
+description: "US Layer is a professional IT and security services company based in Galle, Sri Lanka, founded in 2016."
 ---
 
-<h1 class="display-5 fw-bold">{{ page.title }}</h1>
+<div class="container py-5">
 
-U.S. LAYER is a blossoming company, founded by two ambitious brothers in Sri Lanka back in 2016. Ever since our inception, we have taken great pride in providing exemplary services to businesses, resolving their complex and cost-intensive problems with elegant solutions that boost flexibility, enhance performance, and elevate competitiveness. Our unwavering commitment to delivering outstanding customer service has enabled us to fulfill our promise of producing affirmative outcomes for our esteemed clients.
+  <!-- Hero -->
+  <div class="row justify-content-center text-center mb-5">
+    <div class="col-lg-8">
+      <h1 class="display-5 fw-bold mb-3">About US Layer</h1>
+      <p class="lead text-secondary">A professional technology and security services company based in Galle, Sri Lanka — delivering reliable solutions since 2016.</p>
+    </div>
+  </div>
 
-## Our Vision
-At U.S. LAYER, we firmly believe that modern technologies and robust security measures should be accessible to all businesses. That's why we offer a diverse range of cutting-edge solutions tailored to meet the unique needs of every client. Our team of experts diligently plans, designs, and executes each project in alignment with the specific requirements and objectives of our clients.
+  <!-- Story + Stats -->
+  <div class="row align-items-start g-5 mb-5">
+    <div class="col-lg-6">
+      <h2 class="fw-bold mb-3">Who We Are</h2>
+      <p class="text-secondary">US Layer is an IT and security services company founded in Galle, Sri Lanka in 2016. We specialise in IP CCTV installation, burglar alarm systems, structured networking and custom software development for businesses, hotels, guesthouses and homeowners across the Southern Province.</p>
+      <p class="text-secondary">From a single technician visit to a complete multi-site security deployment, we plan, install and support every project with our own in-house team — no subcontractors, no shortcuts. We take the time to understand each client's property and needs before recommending a solution.</p>
+      <p class="text-secondary mb-0">Our clients include locally owned hotels and guesthouses, foreign property owners, restaurants, retail businesses and residential homeowners throughout Galle, Unawatuna and the wider Southern Province.</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <div class="p-4 rounded-3 bg-body-secondary h-100 text-center">
+            <div class="service-icon mx-auto mb-3"><i class="bi bi-calendar3"></i></div>
+            <p class="fw-semibold mb-1">Founded 2016</p>
+            <p class="text-secondary small mb-0">Over nine years serving clients across the Southern Province.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="p-4 rounded-3 bg-body-secondary h-100 text-center">
+            <div class="service-icon mx-auto mb-3"><i class="bi bi-geo-alt"></i></div>
+            <p class="fw-semibold mb-1">Based in Galle</p>
+            <p class="text-secondary small mb-0">Hapugala, Wakwella — fast on-site response across the district.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="p-4 rounded-3 bg-body-secondary h-100 text-center">
+            <div class="service-icon mx-auto mb-3"><i class="bi bi-person-check"></i></div>
+            <p class="fw-semibold mb-1">In-house Team</p>
+            <p class="text-secondary small mb-0">Every installation completed by our own trained technicians.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="p-4 rounded-3 bg-body-secondary h-100 text-center">
+            <div class="service-icon mx-auto mb-3"><i class="bi bi-patch-check"></i></div>
+            <p class="fw-semibold mb-1">2-Year Warranty</p>
+            <p class="text-secondary small mb-0">Equipment covered for 2 years, with 1 year of complimentary service visits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-We take pride in staying up-to-date with the latest advancements in technology and security, ensuring that our clients receive the most innovative and effective solutions. With our comprehensive suite of services, businesses can rest assured that their every need is covered.
+  <!-- Values -->
+  <div class="py-4 border-top border-bottom mb-5">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">What We Stand For</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="d-flex gap-3">
+          <div class="service-icon flex-shrink-0"><i class="bi bi-receipt"></i></div>
+          <div>
+            <h5 class="fw-semibold mb-1">Transparency</h5>
+            <p class="text-secondary small mb-0">No hidden charges. We provide itemised, written quotations before any work begins, so you know exactly what you are paying for.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-3">
+          <div class="service-icon flex-shrink-0"><i class="bi bi-tools"></i></div>
+          <div>
+            <h5 class="fw-semibold mb-1">Reliability</h5>
+            <p class="text-secondary small mb-0">We arrive on time, communicate clearly and stand behind every installation. If something is not right, we come back and fix it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex gap-3">
+          <div class="service-icon flex-shrink-0"><i class="bi bi-headset"></i></div>
+          <div>
+            <h5 class="fw-semibold mb-1">Long-term Support</h5>
+            <p class="text-secondary small mb-0">Our relationship with clients does not end at installation. We provide ongoing maintenance, remote assistance and scheduled service visits.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-U.S. LAYER places client satisfaction at the forefront of everything we do, and our steadfast dedication to excellence has earned us a well-deserved reputation as a highly knowledgeable provider of top-tier technology solutions. Our team is always on hand to help you achieve your business goals with ease, whether you require assistance with project planning, design, or implementation.
+  <!-- CTA -->
+  <div class="text-center">
+    <h3 class="fw-semibold mb-3">Ready to work with us?</h3>
+    <p class="text-secondary mb-4">Contact us for a free site survey and no-obligation quotation.</p>
+    <a href="/contact/" class="btn btn-primary btn-lg px-4 me-2">Get in Touch</a>
+    <a href="/services/" class="btn btn-outline-secondary btn-lg px-4">Our Services</a>
+  </div>
 
-We believe that our clients deserve nothing less than the very best, which is why we constantly strive to stay ahead of the curve when it comes to the latest advancements in technology and security. Our extensive knowledge and expertise enable us to deliver cutting-edge solutions that are tailor-made to suit the unique needs of each client.
-
-At U.S. LAYER, we pride ourselves on our ability to consistently deliver outstanding results, and our team is committed to going above and beyond to exceed our clients' expectations. With our comprehensive range of services, you can rest assured that your business needs are in capable hands.
+</div>

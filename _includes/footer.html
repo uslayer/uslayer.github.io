@@ -1,25 +1,13 @@
-<!-- Messenger Chat Plugin Code -->
+<!-- Facebook Messenger Chat Plugin -->
 <div id="fb-root"></div>
-
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
-
+<div id="fb-customer-chat" class="fb-customerchat"></div>
 <script>
   var chatbox = document.getElementById('fb-customer-chat');
   chatbox.setAttribute("page_id", "1316215625090703");
   chatbox.setAttribute("attribution", "biz_inbox");
-</script>
-
-<!-- Your SDK code -->
-<script>
   window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v15.0'
-    });
+    FB.init({ xfbml: true, version: 'v15.0' });
   };
-
   (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -28,78 +16,88 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-    
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
-<footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-lg-3 mb-3">
-        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="US LAYER">
-          <img src="/assets/images/uslayer_logo.svg" width="100%"  alt="US LAYER logo" class="d-block me-2">
-        </a>
-        <ul class="list-unstyled small text-muted">
-          <li class="mb-2">
-            At US LAYER, we specialize in providing top-notch IT services, including web development and design, software development, networking, and CCTV installation. Our focus is on delivering exceptional security, management, and information services to meet your needs. Contact us today to learn more about how we can help your business thrive in the digital age.
-          </li>
-          <li class="border-top"></li>
-          <li class="mb-2">US LAYER, Hapugala, Wakwella, Galle, Sri Lanka.</li>
-          <li class="mb-2"><a href="tel:=+94769026918">+94 76 902 6918</a> (CCTV, Alarm | Home security)</li>
-          <li class="mb-2"><a href="tel:=+94772991888">+94 772 991 888</a> (Software development)</li>
-        </ul>
+<footer class="site-footer" itemscope itemtype="https://schema.org/LocalBusiness">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Brand + contact -->
+      <div class="col-12 col-lg-4">
+        <div class="footer-brand">
+          <a href="/" aria-label="US LAYER home">
+            <img src="/assets/images/uslayer_logo.svg" alt="US LAYER" loading="lazy" itemprop="logo">
+          </a>
+        </div>
+        <p class="footer-desc" itemprop="description">
+          Top-notch IT services — web development, software, networking, CCTV &amp; alarm systems. Based in Galle, Sri Lanka.
+        </p>
+        <address class="mt-3" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <p class="mb-1">
+            <i class="bi bi-geo-alt me-1 opacity-60"></i>
+            <span itemprop="streetAddress">Hapugala, Wakwella</span>,
+            <span itemprop="addressLocality">Galle</span>,
+            <span itemprop="addressCountry">Sri Lanka</span>.
+          </p>
+          <p class="mb-1">
+            <i class="bi bi-telephone me-1 opacity-60"></i>
+            <a href="tel:+94769026918" itemprop="telephone">+94 76 902 6918</a>
+            <span class="ms-1 opacity-50" style="font-size:0.75rem;">(CCTV &amp; Alarm)</span>
+          </p>
+
+        </address>
+        <div class="footer-social mt-3">
+          {% if site.social.facebook %}<a href="{{ site.social.facebook }}" target="_blank" rel="noopener" aria-label="Facebook" class="social-facebook"><i class="bi bi-facebook"></i></a>{% endif %}
+          {% if site.social.twitter %}<a href="{{ site.social.twitter }}" target="_blank" rel="noopener" aria-label="Twitter" class="social-twitter"><i class="bi bi-twitter-x"></i></a>{% endif %}
+          {% if site.social.youtube %}<a href="{{ site.social.youtube }}" target="_blank" rel="noopener" aria-label="YouTube" class="social-youtube"><i class="bi bi-youtube"></i></a>{% endif %}
+        </div>
       </div>
-      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-        <h5>QUICK LINKS</h5>
-        <ul class="list-unstyled">
+
+      <!-- Quick links -->
+      <div class="col-6 col-sm-4 col-lg-2">
+        <p class="footer-heading">Quick Links</p>
+        <ul class="footer-links">
           {% for item in site.data.menus.footermenu %}
-            <li class="mb-2">
-              <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}" alt="{{item.alt}}">{{item.title}}</a>
-            </li>
+          <li><a href="{% unless item.external %}{{ site.baseurl }}/{% endunless %}{{ item.url }}">{{ item.title }}</a></li>
           {% endfor %}
         </ul>
       </div>
-      <div class="col-6 col-lg-3 mb-3">
-        <h5>HOSTING & PRODUCTS</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://hosting.uslayer.com/optimized-wordpress-hosting" target="_blank">WordPress Hosting</a></li>
-          <li class="mb-2"><a href="https://hosting.uslayer.com/cloudhosting" target="_blank">Cloud Hosting</a></li>
-          <li class="mb-2"><a href="https://hosting.uslayer.com/web-hosting/linux-hosting" target="_blank">Linux Hosting</a></li>
-          <li class="mb-2"><a href="https://hosting.uslayer.com/website-design" target="_blank">Website Builder</a></li>
+
+      <!-- Hosting -->
+      <div class="col-6 col-sm-4 col-lg-2">
+        <p class="footer-heading">Hosting</p>
+        <ul class="footer-links">
+          <li><a href="https://hosting.uslayer.com/optimized-wordpress-hosting" target="_blank" rel="noopener">WordPress Hosting</a></li>
+          <li><a href="https://hosting.uslayer.com/cloudhosting" target="_blank" rel="noopener">Cloud Hosting</a></li>
+          <li><a href="https://hosting.uslayer.com/web-hosting/linux-hosting" target="_blank" rel="noopener">Linux Hosting</a></li>
+          <li><a href="https://hosting.uslayer.com/website-design" target="_blank" rel="noopener">Website Builder</a></li>
         </ul>
       </div>
-      <div class="col-6 col-lg-3 mb-3">
-        <h5>DOMAINS</h5>
-        <ul class="list-unstyled">
-          <li class="mb-2"><a href="https://hosting.uslayer.com/domain-registration/" target="_blank">Register Domain Name</a></li>
-          <li class="mb-2"><a href="https://hosting.uslayer.com/domain-registration/domain-registration-price" target="_blank">View Domain Pricing</a></li>
-          <li class="mb-2"><a href="https://hosting.uslayer.com/domain-registration/domain-whois-lookup" target="_blank">Whois Lookup</a></li>
-          <li class="mb-2"><a href="https://hosting.uslayer.com/domain-registration/free-with-domain-registration" target="_blank">Free with Every Domain</a></li>
-          <li class="mb-2"><a href="https://hosting.uslayer.com/domain-registration/domain-name-suggestion-tool" target="_blank">Name Suggestion Tool</a></li>
+
+      <!-- Domains -->
+      <div class="col-6 col-sm-4 col-lg-2">
+        <p class="footer-heading">Domains</p>
+        <ul class="footer-links">
+          <li><a href="https://hosting.uslayer.com/domain-registration/" target="_blank" rel="noopener">Register Domain</a></li>
+          <li><a href="https://hosting.uslayer.com/domain-registration/domain-registration-price" target="_blank" rel="noopener">Domain Pricing</a></li>
+          <li><a href="https://hosting.uslayer.com/domain-registration/domain-whois-lookup" target="_blank" rel="noopener">Whois Lookup</a></li>
+          <li><a href="https://hosting.uslayer.com/domain-registration/domain-name-suggestion-tool" target="_blank" rel="noopener">Name Suggestion</a></li>
         </ul>
       </div>
+
     </div>
-    <p class="text-center text-muted border-top"><a href="/LICENSE.txt" target="_blank">Copyright © US LAYER</a></p>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <span>&copy; {{ 'now' | date: "%Y" }} US LAYER. All rights reserved.</span>
+      <span>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        &nbsp;&middot;&nbsp;
+        <a href="/LICENSE.txt" target="_blank">License</a>
+      </span>
+    </div>
   </div>
 </footer>
 
-
-<!-- JavaScript
-================================================== -->
-<!--<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="{{ site.baseurl }}/assets/js/test.min.js"></script>
