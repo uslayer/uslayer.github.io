@@ -114,6 +114,9 @@ img { max-width:100%; height:auto; }
   color: #92400e;
 }
 
+.text-indigo { color: var(--c-indigo) !important; }
+.text-indigo:hover { color: var(--c-indigo-dark) !important; }
+
 .section-heading {
   font-size: clamp(1.6rem, 3.5vw, 2.4rem);
   font-weight: 800;
