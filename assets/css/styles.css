@@ -655,11 +655,14 @@ img { max-width:100%; height:auto; }
 .testimonial-rating {
   display: inline-flex;
   align-items: center;
+  gap: 0.15rem;
   font-size: 1.1rem;
   color: #f59e0b;
   font-weight: 600;
+  line-height: 1;
 }
-.testimonial-rating span { color: var(--c-muted); font-size: 0.88rem; font-weight: 500; }
+.testimonial-rating i { display: flex; line-height: 1; }
+.testimonial-rating span { color: var(--c-muted); font-size: 0.88rem; font-weight: 500; line-height: 1; margin-left: 0.5rem; }
 
 /* Marquee */
 .tc-marquee-outer {
