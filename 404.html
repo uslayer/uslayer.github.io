@@ -139,6 +139,9 @@ permalink: /404.html
       <div class="col-lg-7">
         <div class="e404-code" aria-hidden="true">404</div>
         <h1 class="e404-title">Page Not Found</h1>
+        <p id="e404RequestedPath" class="mb-3" style="font-size:.82rem;color:#94a3b8;font-family:monospace;display:none;">
+          <span style="opacity:.6;">Requested:</span> <span id="e404PathText"></span>
+        </p>
         <p class="e404-sub">
           The page you're looking for doesn't exist or may have been moved.
           Let's get you back on track.
@@ -186,3 +189,27 @@ permalink: /404.html
     </div>
   </div>
 </section>
+
+<script>
+(function () {
+  try {
+    var raw = decodeURIComponent(window.location.pathname);
+    // Strip leading/trailing slashes, replace separators with spaces, trim
+    var label = raw
+      .replace(/^\/+|\/+$/g, '')
+      .replace(/[-_%+]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (label) {
+      var el = document.getElementById('e404PathText');
+      var wrap = document.getElementById('e404RequestedPath');
+      if (el && wrap) {
+        el.textContent = '/' + raw.replace(/^\/+|\/+$/g, '') + '/';
+        wrap.style.display = 'block';
+      }
+      // Update browser tab title
+      document.title = label + ' — Page Not Found · US Layer';
+    }
+  } catch (e) {}
+})();
+</script>
