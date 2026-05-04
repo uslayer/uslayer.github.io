@@ -1542,13 +1542,25 @@ html { scroll-behavior: smooth; }
 }
 
 /* ============================================================
-   BOOTSTRAP ICONS
+   BOOTSTRAP ICONS — global alignment fix
+   .bi       → SVG icon elements (<svg class="bi">)
+   i.bi      → font icon elements (<i class="bi bi-*">)
    ============================================================ */
 .bi {
   width: 1em;
   height: 1em;
   vertical-align: -0.125em;
   fill: currentColor;
+}
+
+/* Font icon: always perfectly centred with adjacent inline text */
+i.bi {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  line-height: 1;
+  flex-shrink: 0;
 }
 
 /* ============================================================

@@ -1,10 +1,188 @@
 ---
 layout: default
-title: 404
+title: "Page Not Found — US Layer"
 permalink: /404.html
 ---
-<div class="text-center">
-<h1 class="mt-5"><span class="badge badge-dark font-weight-normal">404</span></h1>
-<h1 class="display-1 mt-4 mb-4"> Page not found!</h1>
-<p>Please visit our <a href="{{site.baseurl}}/">homepage</a>!</p>
-</div>
+
+<style>
+/* ── 404 page — light mode (default) ─────────────────────── */
+.e404-hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 60%, #f8fafc 100%);
+  position: relative;
+  overflow: hidden;
+}
+.e404-hero::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 55% at 50% 45%, rgba(99,102,241,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.e404-code {
+  font-size: clamp(6rem, 18vw, 12rem);
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -.02em;
+  user-select: none;
+}
+.e404-title {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: .75rem;
+}
+.e404-sub {
+  color: #64748b;
+  font-size: 1.05rem;
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.e404-btn-primary {
+  background: #6366f1; color: #fff; border: none;
+  padding: .75rem 1.75rem; border-radius: .6rem;
+  font-weight: 600; font-size: .95rem;
+  text-decoration: none; display: inline-flex; align-items: center; gap: .5rem;
+  transition: background .2s, transform .2s;
+}
+.e404-btn-primary:hover { background: #4f46e5; color: #fff; transform: translateY(-1px); }
+.e404-btn-outline {
+  background: transparent; color: #6366f1;
+  border: 1px solid rgba(99,102,241,0.4);
+  padding: .75rem 1.5rem; border-radius: .6rem;
+  font-weight: 600; font-size: .95rem;
+  text-decoration: none; display: inline-flex; align-items: center; gap: .5rem;
+  transition: border-color .2s, color .2s;
+}
+.e404-btn-outline:hover { border-color: #6366f1; color: #4f46e5; }
+.e404-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: .75rem;
+  margin-top: 2.5rem;
+  max-width: 560px;
+}
+.e404-link-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: .75rem;
+  padding: .9rem 1rem;
+  text-decoration: none;
+  display: flex; align-items: center; gap: .6rem;
+  color: #334155; font-size: .875rem; font-weight: 500;
+  transition: background .2s, border-color .2s, color .2s;
+}
+.e404-link-card:hover {
+  background: #ede9fe;
+  border-color: rgba(99,102,241,0.4);
+  color: #4f46e5;
+}
+.e404-link-card i { color: #6366f1; font-size: 1.1rem; flex-shrink: 0; }
+.e404-decoration {
+  position: absolute; right: -4rem; top: 50%;
+  transform: translateY(-50%);
+  font-size: 22rem; opacity: .04; line-height: 1;
+  color: #6366f1;
+  user-select: none; pointer-events: none;
+}
+.e404-icon-circle {
+  width: 14rem; height: 14rem; border-radius: 50%;
+  background: rgba(99,102,241,0.07);
+  border: 1px solid rgba(99,102,241,0.18);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.e404-icon-circle i { font-size: 5rem; color: #6366f1; }
+.e404-brand-label { font-size: .8rem; color: #94a3b8; text-transform: uppercase; letter-spacing: .07em; }
+
+/* ── 404 page — dark mode overrides ─────────────────────── */
+[data-bs-theme="dark"] .e404-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 60%, #0f172a 100%);
+}
+[data-bs-theme="dark"] .e404-hero::before {
+  background: radial-gradient(ellipse 60% 55% at 50% 45%, rgba(99,102,241,0.15) 0%, transparent 70%);
+}
+[data-bs-theme="dark"] .e404-title { color: #f1f5f9; }
+[data-bs-theme="dark"] .e404-sub   { color: #94a3b8; }
+[data-bs-theme="dark"] .e404-btn-outline { color: #a5b4fc; border-color: rgba(99,102,241,0.4); }
+[data-bs-theme="dark"] .e404-btn-outline:hover { border-color: #a5b4fc; color: #c7d2fe; }
+[data-bs-theme="dark"] .e404-link-card {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.08);
+  color: #cbd5e1;
+}
+[data-bs-theme="dark"] .e404-link-card:hover {
+  background: rgba(99,102,241,0.12);
+  border-color: rgba(99,102,241,0.4);
+  color: #e0e7ff;
+}
+[data-bs-theme="dark"] .e404-link-card i { color: #818cf8; }
+[data-bs-theme="dark"] .e404-icon-circle {
+  background: rgba(99,102,241,0.08);
+  border-color: rgba(99,102,241,0.2);
+}
+[data-bs-theme="dark"] .e404-icon-circle i { color: #818cf8; }
+[data-bs-theme="dark"] .e404-brand-label { color: #475569; }
+</style>
+
+<section class="e404-hero">
+  <span class="e404-decoration" aria-hidden="true">404</span>
+  <div class="container py-5">
+    <div class="row align-items-center gy-5">
+
+      <div class="col-lg-7">
+        <div class="e404-code" aria-hidden="true">404</div>
+        <h1 class="e404-title">Page Not Found</h1>
+        <p class="e404-sub">
+          The page you're looking for doesn't exist or may have been moved.
+          Let's get you back on track.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="/" class="e404-btn-primary">
+            <i class="bi bi-house-fill"></i> Go to Homepage
+          </a>
+          <a href="/contact/" class="e404-btn-outline">
+            <i class="bi bi-envelope-fill"></i> Contact Us
+          </a>
+        </div>
+
+        <div class="e404-links-grid">
+          <a href="/cctv-galle/" class="e404-link-card">
+            <i class="bi bi-camera-video-fill"></i> CCTV Galle
+          </a>
+          <a href="/services/" class="e404-link-card">
+            <i class="bi bi-grid-fill"></i> Services
+          </a>
+          <a href="/products/" class="e404-link-card">
+            <i class="bi bi-box-seam-fill"></i> Products
+          </a>
+          <a href="/blog/" class="e404-link-card">
+            <i class="bi bi-journal-text"></i> Blog
+          </a>
+          <a href="/about/" class="e404-link-card">
+            <i class="bi bi-info-circle-fill"></i> About Us
+          </a>
+          <a href="tel:+94769026918" class="e404-link-card">
+            <i class="bi bi-telephone-fill"></i> +94 76 902 6918
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+        <div style="text-align:center;">
+          <div class="e404-icon-circle">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+          </div>
+          <div class="e404-brand-label">US Layer &nbsp;·&nbsp; Galle, Sri Lanka</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
