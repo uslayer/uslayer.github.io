@@ -57,7 +57,7 @@
       }
     })
   
-    window.addEventListener('DOMContentLoaded', () => {
+    const initThemeUI = () => {
       showActiveTheme(getPreferredTheme())
   
       // Desktop panel toggle (open/close)
@@ -91,5 +91,13 @@
           }
         })
       })
-    })
+  }
+  
+    // Run now if DOM is ready, otherwise wait for DOMContentLoaded.
+    // This handles Cloudflare Rocket Loader which defers scripts past DOMContentLoaded.
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', initThemeUI)
+    } else {
+      initThemeUI()
+    }
   })()

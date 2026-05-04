@@ -105,6 +105,11 @@ img { max-width:100%; height:auto; }
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
+.label-chip i {
+  display: flex;
+  line-height: 1;
+  font-size: 0.85em;
+}
 .label-chip.green {
   background: var(--c-emerald-light);
   color: var(--c-emerald-dark);
