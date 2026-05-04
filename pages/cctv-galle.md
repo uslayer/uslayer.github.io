@@ -906,7 +906,10 @@ i.bi { display:inline-flex;align-items:center;justify-content:center;vertical-al
         <i class="bi bi-envelope-fill"></i> Send Enquiry
       </a>
     </div>
-    <div style="margin-top:1.75rem;color:rgba(255,255,255,0.4);font-size:.8rem;">
+    <div style="margin-top:1.75rem;color:rgba(255,255,255,0.55);font-size:.85rem;">
+      Looking for our direct contact number? <a href="/cctv-hotline-galle/" style="color:#fdba74;text-decoration:underline;">Visit our CCTV Hotline page →</a>
+    </div>
+    <div style="margin-top:.5rem;color:rgba(255,255,255,0.4);font-size:.8rem;">
       Hybrid CCTV · a division of US Layer · Hapugala, Wakwella, Galle, Sri Lanka
     </div>
   </div>
