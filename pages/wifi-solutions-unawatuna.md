@@ -663,7 +663,10 @@ i.bi { display:inline-flex;align-items:center;justify-content:center;vertical-al
       "@id": "https://uslayer.github.io/#organization",
       "name": "US Layer",
       "url": "https://uslayer.github.io",
+      "image": "https://uslayer.github.io/assets/images/fav/android-chrome-512x512.png",
+      "logo": "https://uslayer.github.io/assets/images/uslayer_logo.svg",
       "telephone": "+94769026918",
+      "priceRange": "$$",
       "email": "info@uslayer.com",
       "address": {
         "@type": "PostalAddress",
