@@ -1,0 +1,134 @@
+<!-- ── Business Status Strip ─────────────────────────────────────
+     Shows open/closed status and quick-contact links.
+     Used site-wide via: include business_status.html
+─────────────────────────────────────────────────────────────── -->
+<div class="biz-status-strip" aria-label="Business status">
+  <div class="container">
+    <div class="biz-status-inner">
+
+      <!-- Open / Closed indicator (JS-driven) -->
+      <div class="biz-status-badge" id="bizStatusBadge">
+        <span class="biz-dot" id="bizDot"></span>
+        <span id="bizStatusText">Checking hours…</span>
+      </div>
+
+      <!-- Hours note -->
+      <div class="biz-hours-note">
+        <i class="bi bi-clock me-1"></i>
+        Mon – Sat &nbsp;·&nbsp; 8:00 AM – 6:00 PM (Sri Lanka)
+      </div>
+
+      <!-- Quick-contact links -->
+      <div class="biz-contact-links">
+        <a href="tel:+94769026918" class="biz-contact-link">
+          <i class="bi bi-telephone-fill"></i>
+          <span>+94 76 902 6918</span>
+        </a>
+        <a href="https://wa.me/94769026918" target="_blank" rel="noopener" class="biz-contact-link biz-wa">
+          <i class="bi bi-whatsapp"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<style>
+.biz-status-strip {
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  padding: .65rem 0;
+}
+[data-bs-theme="dark"] .biz-status-strip {
+  background: #111827;
+  border-color: #1f2937;
+}
+.biz-status-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .75rem 1.5rem;
+}
+.biz-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-size: .82rem;
+  font-weight: 700;
+  color: #111827;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: .3rem .85rem;
+}
+[data-bs-theme="dark"] .biz-status-badge {
+  background: #1e293b;
+  border-color: #374151;
+  color: #f9fafb;
+}
+.biz-dot {
+  width: .55rem;
+  height: .55rem;
+  border-radius: 50%;
+  background: #9ca3af;
+  flex-shrink: 0;
+  transition: background .3s;
+}
+.biz-dot.open  { background: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,.18); }
+.biz-dot.closed { background: #ef4444; box-shadow: 0 0 0 3px rgba(239,68,68,.18); }
+.biz-hours-note {
+  font-size: .8rem;
+  color: #6b7280;
+}
+[data-bs-theme="dark"] .biz-hours-note { color: #9ca3af; }
+.biz-contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-left: auto;
+}
+.biz-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #374151;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: .45rem;
+  padding: .3rem .8rem;
+  text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+[data-bs-theme="dark"] .biz-contact-link {
+  background: #1e293b;
+  border-color: #374151;
+  color: #d1d5db;
+}
+.biz-contact-link:hover { border-color: #ea580c; color: #ea580c; }
+.biz-contact-link.biz-wa:hover { border-color: #22c55e; color: #22c55e; }
+</style>
+
+<script>
+(function () {
+  'use strict';
+  var dot  = document.getElementById('bizDot');
+  var text = document.getElementById('bizStatusText');
+  if (!dot || !text) return;
+
+  // Sri Lanka is UTC+5:30
+  var now = new Date();
+  var utc = now.getTime() + now.getTimezoneOffset() * 60000;
+  var lk  = new Date(utc + 5.5 * 3600000);
+  var day  = lk.getDay();   // 0=Sun, 6=Sat
+  var hour = lk.getHours() + lk.getMinutes() / 60;
+
+  var isOpen = day >= 1 && day <= 6 && hour >= 8 && hour < 18;
+
+  dot.classList.add(isOpen ? 'open' : 'closed');
+  text.textContent = isOpen ? 'Open Now' : 'Currently Closed';
+})();
+</script>
