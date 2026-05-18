@@ -9,7 +9,7 @@ baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/uslayer-logo.svg'
 favicon: 'assets/images/fav.svg'
-author: Admin
+author: "US Layer"
 paginate: 30
 disqus: 'us-layer'
 locale: en_us
