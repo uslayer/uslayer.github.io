@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Best CCTV Installation in Unawatuna | Security Cameras for Hotels, Guesthouses & Tourists | US Layer"
+image: /assets/images/pages/cctv-unawatuna.png
 description: "Professional CCTV installation in Unawatuna, Sri Lanka. HD security camera systems for hotels, guesthouses, restaurants and tourist businesses. Trusted by foreigners & expats. Call +94 76 902 6918."
 permalink: /cctv-unawatuna/
 comments: false

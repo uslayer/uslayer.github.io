@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Best WiFi Installation in Unawatuna | Wireless Internet for Hotels, Guesthouses & Tourists | US Layer"
+image: /assets/images/pages/wifi-solutions-unawatuna.png
 description: "Professional WiFi installation in Unawatuna, Sri Lanka. High-speed wireless internet for hotels, guesthouses, restaurants and tourist businesses. Trusted by foreigners & expats. Call +94 76 902 6918."
 permalink: /wifi-solutions-unawatuna/
 comments: false

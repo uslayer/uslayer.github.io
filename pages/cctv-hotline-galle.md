@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "CCTV Hotline Galle | Contact Number for CCTV Installation & Repair"
+image: /assets/images/pages/cctv-hotline-galle.png
 description: "CCTV hotline in Galle, Sri Lanka — Call +94 76 902 6918 or WhatsApp for CCTV installation, repair & support across Galle, Unawatuna, Hikkaduwa & surrounding areas."
 permalink: /cctv-hotline-galle/
 comments: false

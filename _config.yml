@@ -34,6 +34,18 @@ social:
   twitter: https://twitter.com/us_layer
   youtube: https://www.youtube.com/uslayer
 
+# Twitter card (used by jekyll-seo-tag)
+twitter:
+  username: us_layer
+  card: summary_large_image
+
+# Default OG image for all pages/posts that don't define their own image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/uslayer_cctv_ad.jpg
+
 # Plugins
 plugins:
 - jekyll-paginate

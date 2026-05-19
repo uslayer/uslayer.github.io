@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Hybrid CCTV | #1 Professional IP CCTV Service Provider in Galle, Sri Lanka"
+image: /assets/images/pages/hybrid-cctv.png
 description: "Hybrid CCTV — expert IP CCTV installation, AI smart cameras, burglar alarms & smart security solutions in Galle. Backed by US Layer IT Solutions. Call +94 76 902 6918."
 permalink: /hybrid-cctv/
 comments: false

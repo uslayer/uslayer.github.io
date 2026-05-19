@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Best CCTV Installation in Galle | IP CCTV & Analog CCTV | Hybrid CCTV Sri Lanka"
+image: /assets/images/pages/cctv-galle.png
 description: "Professional IP CCTV & analog CCTV installation in Galle, Sri Lanka. HD & 4K security cameras, NVR systems, remote monitoring. Free site survey. Call +94 76 902 6918."
 permalink: /cctv-galle/
 comments: false

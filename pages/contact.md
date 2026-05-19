@@ -1,6 +1,7 @@
 ---
 layout: services_layout
 title: Contact
+image: /assets/images/pages/contact.png
 permalink: "/contact/"
 comments: false
 description: "Contact US Layer in Galle, Sri Lanka — book a free site survey, request a quote or ask about our CCTV, alarm and networking services."
