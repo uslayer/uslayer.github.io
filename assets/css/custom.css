@@ -3,6 +3,11 @@
  * Core design system lives in styles.css
  * ================================================== */
 
+/* ── Post tag label ── */
+.post-tags-wrap { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
+.post-tags-wrap .tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; }
+.post-tags-label { font-size: .73rem; font-weight: 700; color: var(--c-muted); text-transform: uppercase; letter-spacing: .07em; white-space: nowrap; line-height: 1; padding-top: .1rem; }
+
 /* ── Service icon circles ── */
 .service-icon {
   width: 52px;

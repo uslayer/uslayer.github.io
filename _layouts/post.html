@@ -1,9 +1,21 @@
 ---
-layout: blog-si
+layout: blog
 disqus: false
 archive: false
 post_class: post-template
 ---
+
+<!-- Breadcrumb (visible + matches BreadcrumbList schema in blog.html) -->
+<nav aria-label="Breadcrumb" class="mb-3">
+  <ol class="breadcrumb" style="font-size:.82rem;">
+    <li class="breadcrumb-item"><a href="{{ site.url }}/">Home</a></li>
+    <li class="breadcrumb-item"><a href="{{ site.url }}/blog/">Blog</a></li>
+    {% for category in page.categories limit:1 %}
+    <li class="breadcrumb-item"><a href="{{ site.url }}/categories#{{ category | replace: ' ', '-' | downcase }}">{{ category }}</a></li>
+    {% endfor %}
+    <li class="breadcrumb-item active" aria-current="page">{{ page.title | truncatewords: 8 }}</li>
+  </ol>
+</nav>
 
 <!-- Begin Article
 ================================================== -->
@@ -35,6 +47,20 @@ post_class: post-template
 
                 <!-- Post Title -->
 				<h1 class="posttitle">{{ page.title }}</h1>
+
+                <!-- Post Tags -->
+                {% if page.tags.size > 0 %}
+                <div class="post-tags-wrap mt-2 mb-1">
+                  <span class="post-tags-label">Tags:</span>
+                  <ul class="tags">
+                    {% assign sortedTags = page.tags | sort %}
+                    {% for tag in sortedTags %}
+                    <li><a href="{{ site.baseurl }}/blog/#{{ tag | slugify }}" rel="tag">{{ tag }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {% endif %}
+                <!-- End Tags -->
 
 			</div>
 

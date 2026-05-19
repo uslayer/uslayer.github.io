@@ -1,0 +1,117 @@
+/*!
+ * US LAYER — Installation Gallery
+ * Reusable photo gallery + lightbox for blog posts
+ * ================================================== */
+
+/* ── Grid ───────────────────────────────────────────────────── */
+.install-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+/* ── Gallery item ────────────────────────────────────────────── */
+.gallery-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0f172a;
+  aspect-ratio: 3 / 4;
+  cursor: zoom-in;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.12);
+  transition: transform 0.22s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.2);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* ── Caption overlay ─────────────────────────────────────────── */
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.65rem 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+.gallery-caption i { margin-right: 0.3rem; opacity: 0.85; }
+
+/* ── Landscape variant ───────────────────────────────────────── */
+.install-gallery.landscape .gallery-item {
+  aspect-ratio: 4 / 3;
+}
+
+/* ── Square variant ──────────────────────────────────────────── */
+.install-gallery.square .gallery-item {
+  aspect-ratio: 1 / 1;
+}
+
+/* ── Lightbox overlay ────────────────────────────────────────── */
+.lb-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.lb-overlay.active {
+  display: flex;
+  animation: lbFadeIn 0.18s ease;
+}
+@keyframes lbFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.lb-overlay img {
+  max-width: 96vw;
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.7);
+  animation: lbSlideUp 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes lbSlideUp {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.lb-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: #fff;
+  font-size: 2.25rem;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  opacity: 0.75;
+  transition: opacity 0.15s, transform 0.15s;
+  padding: 0;
+}
+.lb-close:hover {
+  opacity: 1;
+  transform: rotate(90deg) scale(1.1);
+}
