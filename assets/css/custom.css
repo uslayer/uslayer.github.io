@@ -3,6 +3,9 @@
  * Core design system lives in styles.css
  * ================================================== */
 
+/* ── Post title dark mode ── */
+[data-bs-theme="dark"] .posttitle { color: #f1f5f9; }
+
 /* ── Post tag label ── */
 .post-tags-wrap { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem; margin-top: .5rem; }
 .post-tags-wrap .tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; }
