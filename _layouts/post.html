@@ -26,7 +26,7 @@ post_class: post-template
 		<!-- Post -->
         {% assign author = site.authors[page.author] %}
 
-		<div class="col-sm-8">
+		<div class="col-lg-8">
             <!-- Post Featured Image 
 			{% if page.image %}<img class="featured-image img-fluid rounded" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
 			<!-- End Featured Image -->
@@ -127,9 +127,56 @@ post_class: post-template
 		</div>
 		<!-- End Post -->
 
+		<!-- Contact Sidebar -->
+		<div class="col-lg-4 d-none d-lg-block">
+			<div class="post-contact-sidebar">
+				<h5 class="sidebar-heading">Get in Touch</h5>
 
+				<div class="sidebar-contact-item">
+					<div class="sidebar-icon"><i class="bi bi-telephone-fill"></i></div>
+					<div>
+						<p class="sidebar-label">Phone</p>
+						<a href="tel:+94769026918" class="sidebar-value">+94 76 902 6918</a>
+						<p class="sidebar-note">Mon–Sat, 8 am – 6 pm</p>
+					</div>
+				</div>
 
+				<div class="sidebar-contact-item">
+					<div class="sidebar-icon"><i class="bi bi-whatsapp"></i></div>
+					<div>
+						<p class="sidebar-label">WhatsApp</p>
+						<a href="https://wa.me/94769026918" target="_blank" rel="noopener" class="sidebar-value">Chat with us</a>
+					</div>
+				</div>
 
+				<div class="sidebar-contact-item">
+					<div class="sidebar-icon"><i class="bi bi-envelope-fill"></i></div>
+					<div>
+						<p class="sidebar-label">Email</p>
+						<a href="mailto:contact@uslayer.com" class="sidebar-value">contact@uslayer.com</a>
+					</div>
+				</div>
+
+				<div class="sidebar-contact-item">
+					<div class="sidebar-icon"><i class="bi bi-geo-alt-fill"></i></div>
+					<div>
+						<p class="sidebar-label">Address</p>
+						<p class="sidebar-value mb-0">Hapugala, Wakwella<br>Galle, Sri Lanka</p>
+					</div>
+				</div>
+
+				<hr class="sidebar-divider">
+
+				<a href="{{ site.baseurl }}/contact/" class="sidebar-cta-btn">
+					<i class="bi bi-send me-2"></i>Request a Free Quote
+				</a>
+
+				<a href="tel:+94769026918" class="sidebar-cta-btn sidebar-cta-outline mt-2">
+					<i class="bi bi-telephone me-2"></i>Call Now
+				</a>
+			</div>
+		</div>
+		<!-- End Contact Sidebar -->
 
 	</div>
 

@@ -884,6 +884,111 @@ img { max-width:100%; height:auto; }
 }
 
 /* ============================================================
+   12b. POST CONTACT SIDEBAR
+   ============================================================ */
+.post-contact-sidebar {
+  position: sticky;
+  top: 90px;
+  background: var(--c-surface, #fff);
+  border: 1px solid var(--c-border, #e2e8f0);
+  border-radius: var(--r-lg, 12px);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-xs, 0 1px 4px rgba(0,0,0,.06));
+}
+
+.post-contact-sidebar .sidebar-heading {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: var(--c-text, #1e293b);
+}
+
+.sidebar-contact-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 1.1rem;
+}
+
+.sidebar-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--c-primary-soft, #eff6ff);
+  color: var(--c-primary, #2563eb);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.sidebar-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--c-muted, #64748b);
+  margin-bottom: 0.15rem;
+}
+
+.sidebar-value {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--c-text, #1e293b);
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar-value:hover { color: var(--c-primary, #2563eb); text-decoration: underline; }
+
+.sidebar-note {
+  font-size: 0.75rem;
+  color: var(--c-muted, #64748b);
+  margin: 0.1rem 0 0;
+}
+
+.sidebar-divider {
+  border-color: var(--c-border, #e2e8f0);
+  margin: 1.25rem 0;
+}
+
+.sidebar-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: var(--c-primary, #2563eb);
+  color: #fff;
+  transition: background .2s, box-shadow .2s;
+  border: 2px solid transparent;
+}
+
+.sidebar-cta-btn:hover {
+  background: var(--c-primary-dark, #1d4ed8);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(37,99,235,.3);
+}
+
+.sidebar-cta-outline {
+  background: transparent;
+  color: var(--c-primary, #2563eb);
+  border-color: var(--c-primary, #2563eb);
+}
+
+.sidebar-cta-outline:hover {
+  background: var(--c-primary, #2563eb);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(37,99,235,.2);
+}
+
+/* ============================================================
    13. FOOTER
    ============================================================ */
 .site-footer {
