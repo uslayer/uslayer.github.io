@@ -38,7 +38,7 @@ post_class: post-template
                         {% assign sortedCategories = page.categories | sort %}
                         {% for category in sortedCategories %}
                         <li>
-                         <a href="{{ site.baseurl }}/categories#{{ category | slugify }}">{{ category }}</a>
+                         <a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -55,7 +55,7 @@ post_class: post-template
                   <ul class="tags">
                     {% assign sortedTags = page.tags | sort %}
                     {% for tag in sortedTags %}
-                    <li><a href="{{ site.baseurl }}/blog/#{{ tag | slugify }}" rel="tag">{{ tag }}</a></li>
+                    <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}/" rel="tag">{{ tag }}</a></li>
                     {% endfor %}
                   </ul>
                 </div>

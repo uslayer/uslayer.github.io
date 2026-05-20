@@ -1,0 +1,129 @@
+<!-- ============================================================
+     LATEST BLOG POSTS STRIP  (_includes/blog_posts_strip.html)
+     Auto-scrolling infinite marquee.
+     3 passes per half keeps the track wider than any viewport
+     so no gap ever appears, even with very few posts.
+     Screen readers only see the first (semantic) pass.
+     ============================================================ -->
+
+{%- capture _hcard -%}
+  {%- for post in site.posts limit:6 -%}
+  <article class="post-card d-flex flex-column" role="presentation" aria-hidden="true">
+    <a href="{{ post.url | absolute_url }}" class="d-contents" tabindex="-1">
+      <div class="post-card-img">
+        {%- if post.image -%}
+        <img src="{{ site.baseurl }}/{{ post.image }}" alt="" loading="lazy">
+        {%- else -%}
+        <div class="post-card-img-placeholder"><i class="bi bi-camera-video-fill"></i></div>
+        {%- endif -%}
+      </div>
+      <div class="post-card-body">
+        <div class="post-card-meta">
+          <i class="bi bi-calendar3"></i>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          {%- if post.categories.size > 0 -%}
+          <span style="opacity:.4">&middot;</span>
+          <span>{{ post.categories | first }}</span>
+          {%- endif -%}
+        </div>
+        <span class="post-card-title">{{ post.title }}</span>
+        <p class="post-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
+        <div class="post-card-footer">
+          <span class="post-card-read">Read article <i class="bi bi-arrow-right"></i></span>
+        </div>
+      </div>
+    </a>
+  </article>
+  {%- endfor -%}
+{%- endcapture -%}
+
+<section class="section section-alt" aria-labelledby="blog-strip-heading">
+
+  <div class="container">
+    <div class="row align-items-end g-3 mb-4">
+      <div class="col-lg-8">
+        <div class="label-chip mb-3"><i class="bi bi-journal-richtext me-1"></i>From Our Blog</div>
+        <h2 class="section-heading" id="blog-strip-heading">Latest Articles &amp; Project Showcases</h2>
+        <p class="section-sub mt-3" style="margin:0;text-align:left;max-width:540px;">
+          Installation guides, tech tips, and real project galleries &mdash; the latest from the US Layer team in Galle, Sri Lanka.
+        </p>
+      </div>
+      <div class="col-lg-4 text-lg-end">
+        <a href="{{ site.baseurl }}/blog/" class="btn btn-outline-primary">
+          <i class="bi bi-grid me-1"></i> View All Articles
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="posts-marquee-outer">
+    <div class="posts-marquee" role="list" aria-label="Latest blog posts">
+
+      <!-- ── First half, pass 1: semantic & accessible ───────── -->
+      {% for post in site.posts limit:6 %}
+      <article class="post-card d-flex flex-column" role="listitem"
+               itemscope itemtype="https://schema.org/BlogPosting">
+        <meta itemprop="datePublished" content="{{ post.date | date_to_xmlschema }}">
+        <meta itemprop="author" content="US Layer">
+        <a href="{{ post.url | absolute_url }}" class="d-contents" itemprop="url" aria-label="{{ post.title }}">
+          <div class="post-card-img">
+            {% if post.image %}
+            <img src="{{ site.baseurl }}/{{ post.image }}"
+                 alt="{{ post.title }}"
+                 loading="lazy"
+                 itemprop="image">
+            {% else %}
+            <div class="post-card-img-placeholder"><i class="bi bi-camera-video-fill"></i></div>
+            {% endif %}
+          </div>
+          <div class="post-card-body">
+            <div class="post-card-meta">
+              <i class="bi bi-calendar3"></i>
+              <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+              {% if post.categories.size > 0 %}
+              <span style="opacity:.4">&middot;</span>
+              <span>{{ post.categories | first }}</span>
+              {% endif %}
+            </div>
+            <span class="post-card-title" itemprop="headline">{{ post.title }}</span>
+            <p class="post-card-excerpt" itemprop="description">{{ post.excerpt | strip_html | truncatewords: 18 }}</p>
+            <div class="post-card-footer">
+              <span class="post-card-read">Read article <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </a>
+      </article>
+      {% endfor %}
+
+      <!-- ── First half, passes 2-3: visual fill (aria-hidden) ── -->
+      {{ _hcard }}{{ _hcard }}
+
+      <!-- ── Second half: mirror of first half (all aria-hidden) ── -->
+      {{ _hcard }}{{ _hcard }}{{ _hcard }}
+
+    </div>
+  </div>
+
+  <!-- SEO: ItemList structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "US Layer Latest Blog Posts",
+    "description": "Latest CCTV installation guides, project showcases and IT tips from US Layer, Galle, Sri Lanka.",
+    "url": "{{ site.url }}/blog/",
+    "itemListElement": [
+      {% for post in site.posts limit:6 %}
+      {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ post.url | absolute_url }}",
+        "name": {{ post.title | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+
+</section>
+
