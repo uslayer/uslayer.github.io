@@ -1,0 +1,26 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <sitemap>
+    <loc>{{ site.url }}/page-sitemap.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>{{ site.url }}/category-sitemap.xml</loc>
+    {% if site.posts.first %}<lastmod>{{ site.posts.first.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </sitemap>
+
+  <sitemap>
+    <loc>{{ site.url }}/tag-sitemap.xml</loc>
+    {% if site.posts.first %}<lastmod>{{ site.posts.first.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </sitemap>
+
+  <sitemap>
+    <loc>{{ site.url }}/blog-sitemap.xml</loc>
+    {% if site.posts.first %}<lastmod>{{ site.posts.first.date | date_to_xmlschema }}</lastmod>{% endif %}
+  </sitemap>
+
+</sitemapindex>
