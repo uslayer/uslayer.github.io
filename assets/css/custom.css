@@ -169,6 +169,10 @@
   padding: 4rem 0 3.5rem;
   position: relative;
   overflow: hidden;
+  /* Force GPU compositing — prevents iOS Safari rendering blank when
+     overflow:hidden + ::before gradient overlay are combined */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 .blog-hero::before {
   content: "";
@@ -374,29 +378,16 @@
   height: auto;
 }
 
-/* ── Mobile: replace animated marquee with touch-scroll strip ── */
+/* ── Mobile: keep animation running, just drop the mask ── */
 @media (max-width: 767px) {
   .posts-marquee-outer {
-    /* Remove the mask gradient — it causes invisible rendering on mobile WebKit */
+    /* Remove mask — it caused blank rendering on iOS Safari/Android Chrome.
+       The base transform:translateZ(0) handles GPU compositing instead. */
     -webkit-mask: none;
     mask: none;
-    overflow-x: auto;
-    overflow-y: visible;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
     padding: 0.5rem 0 1rem;
   }
-  .posts-marquee {
-    animation: none;
-    width: auto;
-    padding: 0.25rem 1rem;
-  }
-  .posts-marquee .post-card {
-    width: 260px;
-    scroll-snap-align: start;
-  }
-  /* Hide duplicate aria-hidden passes on mobile — only show first semantic pass */
-  .posts-marquee article[aria-hidden="true"] { display: none; }
+  .posts-marquee .post-card { width: 230px; }
 }
 
 /* stretch anchor inside marquee post-card to fill card */
