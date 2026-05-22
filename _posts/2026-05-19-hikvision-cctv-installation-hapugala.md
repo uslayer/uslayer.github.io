@@ -5,7 +5,7 @@ description: "US Layer installed 6 Hikvision ColorVu 2MP full-color cameras with
 date: 2026-05-19
 categories: [CCTV INSTALLATION]
 tags: [Hikvision, Hapugala, ColorVu, Full Color CCTV]
-image: assets/images/blog/cctv-installation-hapugala/IMG_0850.webp
+image: /assets/images/blog/cctv-installation-hapugala/IMG_0850.webp
 ---
 
 <div class="post-hero">

@@ -351,6 +351,10 @@
   -webkit-mask: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
   mask: linear-gradient(to right, transparent 0, #000 6%, #000 94%, transparent 100%);
   padding: 0.5rem 0 1.5rem;
+  /* Force GPU compositing layer — prevents iOS Safari / Android Chrome
+     from making the element invisible when mask + overflow:hidden combine */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 .posts-marquee {
   display: flex;
@@ -369,8 +373,31 @@
   flex-shrink: 0;
   height: auto;
 }
-@media (max-width: 576px) {
-  .posts-marquee .post-card { width: 240px; }
+
+/* ── Mobile: replace animated marquee with touch-scroll strip ── */
+@media (max-width: 767px) {
+  .posts-marquee-outer {
+    /* Remove the mask gradient — it causes invisible rendering on mobile WebKit */
+    -webkit-mask: none;
+    mask: none;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding: 0.5rem 0 1rem;
+  }
+  .posts-marquee {
+    animation: none;
+    width: auto;
+    padding: 0.25rem 1rem;
+  }
+  .posts-marquee .post-card {
+    width: 260px;
+    scroll-snap-align: start;
+  }
+  /* Hide duplicate aria-hidden passes on mobile — only show first semantic pass */
+  .posts-marquee article[aria-hidden="true"] { display: none; }
 }
+
 /* stretch anchor inside marquee post-card to fill card */
 .post-card .d-contents { display: contents; text-decoration: none; color: inherit; }

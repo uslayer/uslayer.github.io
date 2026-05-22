@@ -5,7 +5,7 @@ description: "Thinking about buying a V380 4G camera, VS80, or O-Kam-Pro? Read t
 date: 2026-05-22
 categories: [CCTV BUYING GUIDE]
 tags: [Wi-Fi Camera, 4G Camera, Cheap CCTV Camera]
-image: assets/images/blog/v-380/v-380.png
+image: /assets/images/blog/v-380/v-380.png
 ---
 
 <div class="post-hero">

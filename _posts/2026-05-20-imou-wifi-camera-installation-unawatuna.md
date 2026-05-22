@@ -5,7 +5,7 @@ description: "US Layer installed 2 × IMOU Cruiser Dual 2 dual-lens 3MP Wi-Fi ca
 date: 2026-05-20
 categories: [CCTV INSTALLATION]
 tags: [Wi-Fi Camera, IMOU, Dual-Lens, Full Color CCTV, 3MP]
-image: assets/images/blog/wifi-imou-camera-installation-unawatuna/4.jpg
+image: /assets/images/blog/wifi-imou-camera-installation-unawatuna/4.jpg
 ---
 
 <div class="post-hero">
