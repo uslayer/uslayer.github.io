@@ -10,33 +10,22 @@ layout: default
     <p class="lead">Tips, guides, and project showcases from the US Layer team — covering CCTV, networking, alarms, and IT solutions in Sri Lanka.</p>
     <div class="blog-stats">
       <span class="blog-stat"><strong>{{ site.posts | size }}</strong> Articles</span>
-      <span class="blog-stat"><strong>{{ site.categories | size }}</strong> Categories</span>
       <span class="blog-stat"><i class="bi bi-geo-alt-fill me-1" style="color:#818cf8"></i>Galle, Sri Lanka</span>
     </div>
   </div>
 </section>
 
-<!-- Posts by category -->
+<!-- All posts — flat chronological grid -->
 <div class="container py-5">
 
-{% assign sorted_categories = site.categories | sort %}
-{% for category in sorted_categories %}
-{% assign cat_posts = category[1] %}
-{% assign visible = cat_posts | where_exp: "p", "p.title != nil" %}
-{% if visible.size > 0 %}
-
-<section class="cat-section" id="{{ category[0] | replace: ' ', '-' | downcase }}">
-  <div class="cat-header">
-    <span class="cat-label"><i class="bi bi-tag-fill"></i> {{ category[0] }}</span>
-    <span class="cat-count">{{ visible.size }} post{% if visible.size != 1 %}s{% endif %}</span>
-  </div>
   <div class="row g-4">
-    {% for post in visible %}
+    {% for post in site.posts %}
+    {% if post.title %}
     <div class="col-sm-6 col-lg-4">
       <a href="{{ post.url | absolute_url }}" class="post-card d-flex flex-column" aria-label="{{ post.title }}">
         <div class="post-card-img">
           {% if post.image %}
-          <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
           {% else %}
           <div class="post-card-img-placeholder"><i class="bi bi-camera-video-fill"></i></div>
           {% endif %}
@@ -58,19 +47,16 @@ layout: default
         </div>
       </a>
     </div>
+    {% endif %}
     {% endfor %}
   </div>
-</section>
 
-{% endif %}
-{% endfor %}
-
-{% if site.posts.size == 0 %}
-<div class="text-center py-5">
-  <i class="bi bi-journal-x" style="font-size:3rem;color:var(--c-muted)"></i>
-  <p class="mt-3 text-muted">No posts yet — check back soon.</p>
-</div>
-{% endif %}
+  {% if site.posts.size == 0 %}
+  <div class="text-center py-5">
+    <i class="bi bi-journal-x" style="font-size:3rem;color:var(--c-muted)"></i>
+    <p class="mt-3 text-muted">No posts yet — check back soon.</p>
+  </div>
+  {% endif %}
 
 </div>
 

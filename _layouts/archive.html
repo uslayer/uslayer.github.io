@@ -104,7 +104,7 @@ layout: default
         <a href="{{ post.url | absolute_url }}" class="post-card d-flex flex-column" aria-label="{{ post.title }}">
           <div class="post-card-img">
             {% if post.image %}
-            <img src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" loading="lazy">
             {% else %}
             <div class="post-card-img-placeholder"><i class="bi bi-camera-video-fill"></i></div>
             {% endif %}
