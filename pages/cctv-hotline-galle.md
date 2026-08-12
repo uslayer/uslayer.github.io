@@ -761,7 +761,7 @@ i.bi { display:inline-flex;align-items:center;justify-content:center;vertical-al
             </h3>
             <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#hotFaq">
               <div class="accordion-body">
-                Pricing depends on the number of cameras, camera type (analog vs. IP), cabling length and storage requirements. As a guide, a basic 4-camera home CCTV system in Galle starts from around Rs. 30,000–50,000 fully installed. Call us for an accurate quote specific to your property.
+                Pricing depends on the number of cameras, camera type (analog vs. IP), cabling length and storage requirements. As a guide, a basic 4-camera home CCTV system in Galle starts from around Rs. 110,000–150,000 fully installed. Call us for an accurate quote specific to your property.
               </div>
             </div>
           </div>
