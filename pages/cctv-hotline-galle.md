@@ -359,7 +359,7 @@ i.bi { display:inline-flex;align-items:center;justify-content:center;vertical-al
         </h1>
         <p class="lead">
           Professional CCTV installation, repair and technical support across Galle and surrounding areas.
-          One call connects you to a certified technician.
+          One call connects you to an experienced technician.
         </p>
 
         <!-- Prominent phone number -->
@@ -638,7 +638,7 @@ i.bi { display:inline-flex;align-items:center;justify-content:center;vertical-al
       <div class="col-sm-6 col-lg-3">
         <div class="hot-card text-center">
           <div class="hot-card-icon mx-auto"><i class="bi bi-award-fill"></i></div>
-          <h3>Certified Technicians</h3>
+          <h3>Experienced Technicians</h3>
           <p>All our technicians are trained and experienced with IP and analog CCTV systems, NVR/DVR configuration and network setup.</p>
         </div>
       </div>
@@ -735,7 +735,7 @@ i.bi { display:inline-flex;align-items:center;justify-content:center;vertical-al
             </h3>
             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#hotFaq">
               <div class="accordion-body">
-                Yes. We cover the entire Galle district including Unawatuna, Hikkaduwa, Ahangama, Koggala, Karapitiya, Baddegama, Elpitiya, and Ambalangoda. Call <a href="tel:+94769026918" class="hot-phone-inline">+94 76 902 6918</a> to confirm coverage for your area.
+                Yes. We cover the entire Galle district including Unawatuna, Hikkaduwa, Ahangama, Koggala, Karapitiya, and Baddegama. Call <a href="tel:+94769026918" class="hot-phone-inline">+94 76 902 6918</a> to confirm coverage for your area.
               </div>
             </div>
           </div>
